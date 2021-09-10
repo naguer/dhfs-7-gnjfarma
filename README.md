@@ -1,27 +1,25 @@
 # Gnjfarma
 
-Somos una empresa que nos dedicamos a vender una gran variedad de productos de belleza y Productos de belleza y dermocosmética, higiene personal, cuidado del bebé y el adulto, entre otros.
-
-Operamos unicamente online, y les ofrecemos una facil solucion para la entrega de los productos. 
-
+GnjFarma es una empresa que ofrece una amplia variedad de productos de belleza, dermocosmética, higiene personal, ciudado del bebé, entre otros. 
+Nuestro principal objetivo es hacer que tus compras sean más fáciles, ágiles y convenientes. 
+Operamos únicamente online, brindando la posibilidad de retirar tus compras por tu farmacia más cercana o recibirla donde desees!   
 
 
 ### Público objetivo
 
-Nuestra plataforma apunta a toda persona que no tiene tiempo (o ganas) de ir a hacer sus compras de perfumería de forma presencial, ofreciendo el plus de poder reservar y asegurar la disponibilidad de un medicamento para su retiro. Como sabemos el tiempo que requiere el ir a una farmacia y con suerte conseguir el producto que estamos buscando. Hemos creado ésta plataforma, con el fin de brindarle al usuario una mejor experiencia en cuanto comodidad y agilidad, en la cual va a poder buscar el producto deseado, y que al comprarlo tenga la opción de recibirlo en su domicilio en óptimas condiciones, como así también poder elegir su farmacia de confianza más cercana y retirar el pedido sin ningún costo adicional.
+Nuestra plataforma apunta a toda persona que no tiene tiempo (o ganas) de ir a hacer sus compras de perfumería de forma presencial. Como sabemos el tiempo que conlleva el ir a una farmacia y con suerte conseguir el producto que estamos buscando, también te ofrecemos la posibilidad de reservar y asegurar la disponibilidad de un medicamento para su retiro.  
 
 
+### Inspiración
 
-### Inspiracion
-
-Hemos elegido los siguientes sitios ya que son de los más reconocidos y utilizados hoy en el país en el ámbito e-commerce sobre productos para el cuidado personal en general, por lo tanto, sus diseños web y funcionalidades fueron de gran ayuda para saber cómo encarar nuestro proyecto, ya que hemos recopilado un poco de cada sitio, para así llegar a implementar nuestras ideas en los bocetos, y también encontrar a que tipo de perfil de cliente estamos apuntando.
+Hemos elegido los sitios más utilizados hoy en día en el ámbito e-commerce argentino sobre productos para el cuidado personal en general. Es por eso, que sus diseños web y funcionalidades fueron de gran ayuda para saber cómo encarar nuestro proyecto, hemos recopilado un poco de cada sitio, para así llegar a implementar nuestras ideas en los bocetos, y también encontrar a que tipo de perfil de cliente estamos apuntando.
 
 * www.gpsfarma.com
 * www.farmaonline.com
 * www.farmacity.com
 * www.openfarma.com.ar
 * www.farmalivery.com
-
+* www.farmaplus.com.ar
 
 
 ### Bio del equipo
