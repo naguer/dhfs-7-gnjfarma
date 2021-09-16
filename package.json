@@ -1,0 +1,22 @@
+{
+  "name": "proyecto",
+  "version": "1.0.0",
+  "description": "GnjFarma",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naguer/dhfs-7-gnjfarma.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/naguer/dhfs-7-gnjfarma/issues"
+  },
+  "homepage": "https://github.com/naguer/dhfs-7-gnjfarma#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

@@ -33,3 +33,7 @@ Hemos elegido los sitios más utilizados hoy en día en el ámbito e-commerce ar
 * **Juan Manuel Passucci Bauer**: Trabaja actualmente como empleado de comercio.
   Después de pasar por algunas carreras universitarias y haber vivido el último año en otro país, volvió con el objetivo de encontrar un nuevo rumbo profesional, es por eso que comenzó a estudiar programación web.
   Su tiempo libre lo distribuye en pasar tiempo con sus mascotas, amigos y realizar actividad física.
+
+
+## Trello 
+https://trello.com/b/nSTKR6Pn/proyecto-integrador-grupo-7
