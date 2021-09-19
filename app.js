@@ -5,10 +5,10 @@ const port = 3000;
 const app = express();
 
 app.get('/',(req,res)=>{
-    res.send('GNJ Farma')
+    res.sendFile(path.resolve(__dirname,'./views/home.html'))
 })
 
 app.listen(port,()=> console.log(`Running on port ${port}`));
-
+app.use(express.static('public'))
 
 
