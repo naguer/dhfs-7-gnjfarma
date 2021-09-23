@@ -14,35 +14,142 @@ rel="stylesheet" />
 <body>
     <header>
         <div class="top-box">
-            <a href="/"><img width="360" src="/images/logo-gnjfarma.jpeg"></a>
+            <a class='logo' href="/"><img src="/images/logo-gnjfarma.jpeg"></a>
             <div class="search-bar">
-
+                <input type="text" class="searchTerm" placeholder="Buscar">
+                <button type="submit" class="searchButton">
+                  <i class="fa fa-search"></i>
+               </button>
             </div>
             <div class="user">
-
+                <i class="far fa-user"></i>
             </div>
             <div class="my-cart">
-
+                <i class="fas fa-shopping-cart"></i>Mi compra
             </div>
         </div>
-        <div class="categories-box">
-
-        </div>
+        <br>
+        <nav >
+            <ul class='categories'>
+                <li class="category"><a href="#">Salud</a>
+                <ul>
+                    <li><a href="">Higiene personal</a></li>
+                    <li><a href="">Higiene oral</a></li>
+                    <li><a href="">Cuidado del bebé</a></li>
+                </ul>
+                </li>
+                <li class="category"><a href="#">Belleza</a>
+                    <ul>
+                        <li><a href="">Labios</a></li>
+                        <li><a href="">Ojos</a></li>
+                        <li><a href="">Rostro</a></li>
+                    </ul>
+                </li>    
+                <li class="category"><a href="#">Limpieza</a>
+                    <ul>
+                        <li><a href="">Limpieza hogar</a></li>
+                        <li><a href="">Limpieza ropa</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <div class="slider">
+    <div class="slider-block">
         <span id="slider-salud"></span>
         <span id="slider-belleza"></span>
         <span id="slider-limpieza"></span>
-        <div class="image-box">
+        <div class="slider">
             <img src="/images/slider-salud.png" alt="slider-salud">
             <img src="/images/slider-belleza.png" alt="slider-belleza">
             <img src="/images/slider-limpieza.png" alt="slider-limpieza">
         </div>
-        <div class="button-box">
+        <div class="prevNext">
+            <div><a href="#slider-limpieza"></a><a href="#slider-belleza"></a></div>
+            <div><a href="#slider-salud"></a><a href="#slider-limpieza"></a></div>
+            <div><a href="#slider-belleza"></a><a href="#slider-salud"></a></div>
+        </div>
+        <div class="bullets">
             <a href="#slider-salud" class="slider-button"></a>
             <a href="#slider-belleza" class="slider-button"></a>
             <a href="#slider-limpieza" class="slider-button"></a>
 
+        </div>
+    </div>
+    <div class="product-category">
+        <div class="product-category-title">
+            <h3>Belleza</h3>
+            <a href="#" class="product-category-view-all">Ver todo</a>
+        </div>
+        <div class="product-category-products">
+            <div class="product">
+                <a href="#">
+                    <img src="/images/belleza-labial.png" alt="imagen producto1">
+                    <div class="product-detail">
+                        <div class="product-detail-description">
+                            Labial Maybelline
+                        </div>
+                        <div class="product-detail-price">
+                            $1.500
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="add-to-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    Agregar
+                </a>
+            </div>
+            <div class="product">
+                <a href="#">
+                    <img src="/images/belleza-labial.png" alt="imagen producto1">
+                    <div class="product-detail">
+                        <div class="product-detail-description">
+                            Labial Maybelline
+                        </div>
+                        <div class="product-detail-price">
+                            $1.500
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="add-to-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    Agregar
+                </a>
+            </div>
+            <div class="product">
+                <a href="#">
+                    <img src="/images/belleza-labial.png" alt="imagen producto1">
+                    <div class="product-detail">
+                        <div class="product-detail-description">
+                            Labial Maybelline
+                        </div>
+                        <div class="product-detail-price">
+                            $1.500
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="add-to-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    Agregar
+                </a>
+            </div>
+            <div class="product">
+                <a href="#">
+                    <img src="/images/belleza-labial.png" alt="imagen producto1">
+                    <div class="product-detail">
+                        <div class="product-detail-description">
+                            Labial Maybelline
+                        </div>
+                        <div class="product-detail-price">
+                            $1.500
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="add-to-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    Agregar
+                </a>
+            </div>
+            
         </div>
     </div>
 </body>

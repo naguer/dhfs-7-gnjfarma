@@ -1,4 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Glory&display=swap');
+
+
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    font-family: 'Glory';
+}
+a{
+    text-decoration: none;
+    
+}
+
+ul{
+    list-style-type: none;
+}
+
+:root{
+    --color-black: #010506;
+    --color-grey: #2e2e2e;
+    --color-white-warm: #f7f1e5;
+    --color-orange: #e35f21;
+    --color-light-orange: #faab05;
+    --color-white-cold: #e6e6e6;
 }
