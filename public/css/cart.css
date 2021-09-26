@@ -1,20 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Glory&display=swap');
 
-
-colores {
-    color: #010506; 
-    color: #2e2e2e;
-    color: #e35f21;
-    color: #eef8f7;
-    color: #faab05;
-    color: #e6e6e6;
-}
 *{
     font-family: "Glory";
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    color: #2e2e2e;
 }
 .main-container {
     width: 100%;
@@ -144,6 +134,13 @@ tr img {
     margin-left: 30px;
     cursor: pointer;
 }
+
+.footer {
+    color: #eef8f7;
+    margin-top: 150px;
+}
+
+
 @media (min-width: 576px) {
     .promo-bar {
         width: 40%;

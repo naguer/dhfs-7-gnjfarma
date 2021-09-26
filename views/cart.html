@@ -12,46 +12,101 @@
     </head>
     <body>
         <header>
-            <div class="top-box">
-                <a class='logo' href="/"><img src="/images/logo-gnjfarma.jpeg"></a>
-                <div class="search-bar">
-                    <input type="text" class="searchTerm" placeholder="Buscar">
-                    <button type="submit" class="searchButton">
-                      <i class="fa fa-search"></i>
-                   </button>
+            <div class="wrapper-container">
+                <div class="top-box">
+                    <div class="burger-menu">
+                        <a onclick="burgerMenuClick()">
+                            <div class="burger">
+                                <i class="fas fa-bars"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <a class='logo' href="/"><img src="/images/logo-gnjfarma.jpeg"></a>
+                    <div class="search-bar">
+                        <input type="text" class="searchTerm" placeholder="Buscar">
+                        <button type="submit" class="searchButton">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                    <div class="user">
+                        <i class="far fa-user"></i>
+                    </div>
+                    <a href="/cart"><div class="my-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <div class="my-order">Mi compra</div>
+                        </div>
+                    </a>
                 </div>
-                <div class="user">
-                    <i class="far fa-user"></i>
-                </div>
-                <div class="my-cart">
-                    <i class="fas fa-shopping-cart"></i>Mi compra
-                </div>
-            </div>
-            <br>
-            <nav >
-                <ul class='categories'>
-                    <li class="category"><a href="#">Salud</a>
-                    <ul>
-                        <li><a href="">Higiene personal</a></li>
-                        <li><a href="">Higiene oral</a></li>
-                        <li><a href="">Cuidado del bebé</a></li>
-                    </ul>
-                    </li>
-                    <li class="category"><a href="#">Belleza</a>
+                <div class="burger-menu-items" id="burger-menu-items">
+                    <div class="burger-menu-item">
+                        <a href="#">
+                            Salud
+                            <i class="fas fa-angle-down"></i>
+                            <i class="fas fa-angle-up"></i>
+                        </a>
+                        <ul>
+                            <li><a href="">Higiene personal</a></li>
+                            <li><a href="">Higiene oral</a></li>
+                            <li><a href="">Cuidado del bebé</a></li>
+                        </ul>
+                    </div>
+                    <div class="burger-menu-item">
+                        <a href="#">
+                            Belleza
+                            <i class="fas fa-angle-down"></i>
+                            <i class="fas fa-angle-up"></i>
+                        </a>
                         <ul>
                             <li><a href="">Labios</a></li>
                             <li><a href="">Ojos</a></li>
                             <li><a href="">Rostro</a></li>
                         </ul>
-                    </li>    
-                    <li class="category"><a href="#">Limpieza</a>
+                    </div>
+                    <div class="burger-menu-item">
+                        <a href="#">
+                            Limpieza
+                            <i class="fas fa-angle-down"></i>
+                            <i class="fas fa-angle-up"></i>
+                        </a>
                         <ul>
                             <li><a href="">Limpieza hogar</a></li>
                             <li><a href="">Limpieza ropa</a></li>
                         </ul>
-                    </li>
-                </ul>
-            </nav>
+                    </div>
+                </div>
+                <br>
+                <nav>
+                    <ul class='categories'>
+                        <li class="category"><a href="#">Salud</a>
+                            <i class="fas fa-angle-down"></i>
+                            <i class="fas fa-angle-up"></i>
+                            <ul>
+                                <li><a href="">Higiene personal</a></li>
+                                <li><a href="">Higiene oral</a></li>
+                                <li><a href="">Cuidado del bebé</a></li>
+                            </ul>
+                        </li>
+                        <li class="category"><a href="#">Belleza</a>
+                            <i class="fas fa-angle-down"></i>
+                            <i class="fas fa-angle-up"></i>
+                            <ul>
+                                <li><a href="">Labios</a></li>
+                                <li><a href="">Ojos</a></li>
+                                <li><a href="">Rostro</a></li>
+                            </ul>
+                        </li>
+                        <li class="category"><a href="#">Limpieza</a>
+                            <i class="fas fa-angle-down"></i>
+                            <i class="fas fa-angle-up"></i>
+                            <ul>
+                                <li><a href="">Limpieza hogar</a></li>
+                                <li><a href="">Limpieza ropa</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+    
+            </div>
         </header>
         <main>
             <section>
@@ -153,5 +208,42 @@
                 </div>
             </section>
         </main>
+        <div class="footer">
+            <div class="wrapper-container-footer">
+                <div class="institucional link-list">
+                    <h4>Institucional</h4>
+                    <ul class="institucional-items">
+                        <li>¿Quienes somos?</li>
+                        <li>Trabaja con nosotros</li>
+                        <li>Nuestra empresa</li>
+                    </ul>
+                </div>
+                <div class="contact  link-list">
+                    <h4>Atención al cliente</h4>
+                    <ul class="contact-items">
+                        <li>Contacto</li>
+                        <li>Terminos y condiciones</li>
+                        <li>Preguntas frecuentes</li>
+                    </ul>
+                </div>
+                <div class="online-shopping  link-list">
+                    <h4>Compra online</h4>
+                    <ul class="online-shopping-items">
+                        <li>Mis pedidos</li>
+                        <li>Puntos de retiro</li>
+                        <li>Mi carrito</li>
+                    </ul>
+                </div>
+                <div class="social-networks">
+                    <h4>Redes sociales</h4>
+                    <ul class="social-networks-items">
+                        <li><i class="fab fa-facebook"></i></li>
+                        <li><i class="fab fa-instagram"></i></li>
+                        <li><i class="fab fa-twitter"></i></li>
+                        <li><i class="fab fa-youtube"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
