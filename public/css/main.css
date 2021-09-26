@@ -24,3 +24,8 @@ ul{
     --color-light-orange: #faab05;
     --color-white-cold: #e6e6e6;
 }
+
+.wrapper-container{
+    max-width: 1170px;
+    margin: auto;
+}

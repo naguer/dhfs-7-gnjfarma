@@ -2,9 +2,9 @@ header{
 	width: 100%;
 }
 .top-box{
-	background-color: var(--color-black);
+	background-color: white;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 	margin: 0;
 }
@@ -14,32 +14,33 @@ header{
 }
 .logo img{
 	width: 100%;
+	display: none;
 }
 nav{
 	width: 100%;
-	background: #fff;
-	box-shadow: 0 3px 10px -2px rgba(0,0,0,.1);
-	border: 1px solid rgba(0,0,0,.1);
+	background: white;
+	display: none;
+	
 }
 .categories{
 	width: 100%;
 }
 .search-bar {
-	width: 50%;
-	display: inline-block;
+	width: 55%;
+	display: flex;
 	position: relative;
 	height: 25px;
 	margin-left: 20px;
 	margin-right: 20px;
 	text-align: center;
+	justify-content: center;
   }
   
 .searchTerm {
 	width: 80%;
-	border: 0,5px solid #2e2e2e;
+	border: 1px solid var(--color-black);
     border-right: none;
 	padding: 5px;
-	height: 20px;
 	border-radius: 5px 0 0 5px;
 	outline: none;
 	color: #2e2e2e;
@@ -51,7 +52,7 @@ nav{
   
 .searchButton {
 	width: 40px;
-	border: 1px solid #2e2e2e;
+	border: 1px solid var(--color-black);
 	border-left: 0px;
 	background: white;
 	text-align: center;
@@ -84,13 +85,25 @@ nav ul li{
 	transition: all .2s ease-in-out;
 }
 nav ul li a{
-	display: block; 
-	padding: 30px 20px;
-	color: #222; 
+	display: inline-block; 
+	padding: 10px 20px;
+	color: var(--color-black); 
 	font-size: .9em;
 	letter-spacing: 1px;
 	text-decoration: none;
 	text-transform: uppercase;
+}
+.fa-angle-down, .fa-angle-up{
+	color: var(--color-black);
+}
+.fa-angle-up{
+	display: none;
+}
+nav .category:hover > .fa-angle-up{
+	display: inline-block;
+}
+nav li:hover > .fa-angle-down{
+	display: none;
 }
 nav ul ul{
 	display: none;
@@ -117,12 +130,15 @@ nav ul ul ul {
 	text-align: center;
 }
 
+.user{
+	margin-right: 20px;
+}
+
 .fa-user{
-    color: var(--color-white-cold);
+    color: var(--color-black);
 	border-radius: 50px;
-	border: var(--color-white-cold) solid 2px;
+	border: var(--color-black) solid 2px;
 	padding: 5px;
-	margin: 25px;
 }
 .fa-shopping-cart{
     color: var(--color-white-cold);
@@ -132,4 +148,26 @@ nav ul ul ul {
 .my-cart{
 	color: var(--color-white-cold);
 	background-color: var(--color-black) ;
+	padding: 10px;
+	border-radius: 5px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.my-order{
+	display: none;
+}
+.burger-menu-items a{
+	width: 100%;
+	display: block;
+	padding: 20px;
+}
+.burger-menu-items.open{
+	display: block;
+}
+.burger-menu-items{
+	display: none;
+}
+.burger-menu{
+	cursor: pointer;
+	padding: 10px;
 }
