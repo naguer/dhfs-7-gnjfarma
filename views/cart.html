@@ -12,6 +12,46 @@
     </head>
     <body>
         <header>
+            <div class="top-box">
+                <a class='logo' href="/"><img src="/images/logo-gnjfarma.jpeg"></a>
+                <div class="search-bar">
+                    <input type="text" class="searchTerm" placeholder="Buscar">
+                    <button type="submit" class="searchButton">
+                      <i class="fa fa-search"></i>
+                   </button>
+                </div>
+                <div class="user">
+                    <i class="far fa-user"></i>
+                </div>
+                <div class="my-cart">
+                    <i class="fas fa-shopping-cart"></i>Mi compra
+                </div>
+            </div>
+            <br>
+            <nav >
+                <ul class='categories'>
+                    <li class="category"><a href="#">Salud</a>
+                    <ul>
+                        <li><a href="">Higiene personal</a></li>
+                        <li><a href="">Higiene oral</a></li>
+                        <li><a href="">Cuidado del bebé</a></li>
+                    </ul>
+                    </li>
+                    <li class="category"><a href="#">Belleza</a>
+                        <ul>
+                            <li><a href="">Labios</a></li>
+                            <li><a href="">Ojos</a></li>
+                            <li><a href="">Rostro</a></li>
+                        </ul>
+                    </li>    
+                    <li class="category"><a href="#">Limpieza</a>
+                        <ul>
+                            <li><a href="">Limpieza hogar</a></li>
+                            <li><a href="">Limpieza ropa</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
         </header>
         <main>
             <section>
@@ -19,51 +59,70 @@
                     <div class="container">
                         <div class="product">
                             <table class="product-table">
+                                <thead>
+                                    <tr>
+                                        <th colspan="2">Producto</th>
+                                        <th>Precio</th>
+                                        <th>Cantidad</th>
+                                        <th>Subtotal</th>
+                                        <th>Eliminar</th>
+                                    </tr>
+                                </thead>
                                 <tr>
-                                    <th>Producto</th>
-                                    <th></th>
-                                    <th>Precio</th>
-                                    <th>Cantidad</th>
-                                    <th>Subtotal</th>
-                                </tr>
-                                <tr>
-                                    <td>Imagen</td>
+                                    <td class="td-img"><img src="/images/belleza-labial.png" alt="" ></td>
                                     <td>Nombre del producto</td>
                                     <td>$xxx,xx</td>
-                                    <td>- 1 +</td>
+                                    <td class="quanty">
+                                        <div><a href=""><i class="fas fa-minus"></i></a></div>
+                                        <div>1</div>
+                                        <div><a href=""><i class="fas fa-plus"></i></a></div>
+                                    </td>
                                     <td>$xxx,xx</td>
-                                    <td>Eliminar</td>
+                                    <td><i class="far fa-trash-alt"></i></td>
                                 </tr>
                                 <tr>
-                                    <td>Imagen</td>
+                                    <td class="td-img"><img src="/images/belleza-labial.png" alt="" ></td>
                                     <td>Nombre del producto</td>
                                     <td>$xxx,xx</td>
-                                    <td>- 1 +</td>
+                                    <td class="quanty">
+                                        <div><a href=""><i class="fas fa-minus"></i></a></div>
+                                        <div>1</div>
+                                        <div><a href=""><i class="fas fa-plus"></i></a></div>
+                                    </td>
                                     <td>$xxx,xx</td>
-                                    <td>Eliminar</td>
+                                    <td><i class="far fa-trash-alt"></i></td>
                                 </tr>
                                 <tr>
-                                    <td>Imagen</td>
+                                    <td class="td-img"><img src="/images/belleza-labial.png" alt="" ></td>
                                     <td>Nombre del producto</td>
                                     <td>$xxx,xx</td>
-                                    <td>- 1 +</td>
+                                    <td class="quanty">
+                                        <div><a href=""><i class="fas fa-minus"></i></a></div>
+                                        <div>1</div>
+                                        <div><a href=""><i class="fas fa-plus"></i></a></div>
+                                    </td>
                                     <td>$xxx,xx</td>
-                                    <td>Eliminar</td>
+                                    <td><i class="far fa-trash-alt"></i></td>
                                 </tr>
                             </table>
-                            <div class="keepbuying">
-                                <a href="" class="link-keepbuying">Seguir Comprando</a>
-                            </div>
-                            <div class="empty-cart">
-                                <a href="" class="link-empty-cart">Vaciar carro</a>
+                            <div class="bottom-options">
+                                <div class="keepbuying">
+                                    <a href="#" class="link-keepbuying">Seguir Comprando</a>
+                                </div>
+                                <div class="empty-cart">
+                                    <a href="#" class="link-empty-cart">Vaciar carro</a>
+                                </div>
                             </div>
                         </div>
                         <div class="cart-resume">
                             <h3>Resumen de compra</h3>
-                            <div class="promo-code">
-                                <input class="input-promo-code" type="text" name="coupon-code" placeholder="Agregar cupón de descuento">
+                            <form action="" class="promo-bar" method="POST">
+                                <div class="promo-code">
+                                    <label></label>
+                                    <input type="text" name="coupon-code" placeholder="Agregar cupón de descuento">
+                                </div>
                                 <i class="fas fa-tag"></i>
-                            </div>
+                            </form>
                             <div class="row">
                                 <div class="subtotal">
                                     <span>Subtotal</span>
