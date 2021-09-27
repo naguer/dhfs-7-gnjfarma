@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Glory&display=swap');
+
+*{
+    font-family: "Glory";
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.main-product {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.product-container {
+    display: block;
+    width: 100%;
+}
+
+.product-container img {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 80%;
+    margin: auto;
+    display: block;
+}
+
+.top-product-info {
+    border-top: solid 1px black;
+}
+.top-product-info ul {
+    display: flex;
+    padding: 10px;
+}
+
+.brand-name {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.brand-name-price {
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+.brand {
+    width: 20%;
+    margin: 0px 15px 0px;
+}
+
+.name-product {
+    width: 55%;
+    margin: 0px 15px 0px;
+}
+
+.price {
+    width: 30%;
+    font-size: 22px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.buy-button {
+    display: flex;
+    margin: 20px 20px;
+    background-color: yellow;
+    justify-content: space-between;
+}
+
+.quantity {
+    background-color: grey;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 25%;
+    height: 7vh;
+}
+
+.subtract, .add {
+    cursor: pointer;
+}
+
+.buy-button a {
+    height: 7vh;
+    text-align: center;
+    width: 75%;
+    background-color: black;
+    display: flex;
+}
+
+.add-to-cart {
+    background-color: black;
+    position: relative;
+    color: white;
+    align-items: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.extra-links a  {
+    width: 40%;
+}
+.extra-links {
+    display: flex;
+    justify-content: space-around;
+}
+.payment-methods {
+    text-align: center;
+    border: solid 1px black;
+    color: black;
+    height: 2.5vh;
+    font-size: 14px;
+    padding-top: 2px;
+}
+.shipping-options {
+    border: solid 1px black;
+    color: black;
+    height: 2.5vh;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 2px;
+}
+
+.bottom-product-info {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.bottom-product-info p {
+    margin-top: 5px;
+}
+.bottom-product-info h4 {
+    margin-top: 10px;
+}
+.bottom-product-info i {
+    margin-top: 5px;
+}
+.product-opinion {
+    margin-top: 5px;
+    color: white;
+    background-color: black;
+    width: 40%;
+    height: 2.5vh;
+    cursor: pointer;
+}
+.look-opinions {
+    margin-top: 5px;
+    color: white;
+    background-color: black;
+    width: 40%;
+    text-align: center;
+    height: 2.5vh;
+}
