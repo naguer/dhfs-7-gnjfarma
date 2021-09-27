@@ -8,6 +8,10 @@ app.get('/',(req,res)=>{
     res.sendFile(path.resolve(__dirname,'./views/home.html'))
 })
 
+app.get('/product', (req,res)=>{
+    res.sendFile (path.resolve(__dirname, './views/product.html'))
+})
+
 app.get('/cart',(req,res)=>{
     res.sendFile(path.resolve(__dirname,'./views/cart.html'))
 })

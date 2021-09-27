@@ -4,11 +4,10 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>GnjFarma - Finalizar la compra</title>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        rel="stylesheet" />
+        <title>Producto</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
         <link rel="stylesheet" href="/css/style.css">
-        <link rel="stylesheet" href="/css/cart.css">
+        <link rel="stylesheet" href="/css/product.css">
     </head>
     <body>
         <header>
@@ -105,108 +104,82 @@
                         </li>
                     </ul>
                 </nav>
-    
+
             </div>
         </header>
         <main>
-            <section>
-                <div class="main-container">
-                    <div class="container">
-                        <div class="product">
-                            <table class="product-table">
-                                <thead>
-                                    <tr>
-                                        <th colspan="2">Producto</th>
-                                        <th>Precio</th>
-                                        <th>Cantidad</th>
-                                        <th>Subtotal</th>
-                                        <th>Eliminar</th>
-                                    </tr>
-                                </thead>
-                                <tr>
-                                    <td class="td-img"><img src="/images/belleza-labial.png" alt="" ></td>
-                                    <td>Nombre del producto</td>
-                                    <td>$xxx,xx</td>
-                                    <td class="quanty">
-                                        <div><a href=""><i class="fas fa-minus"></i></a></div>
-                                        <div>1</div>
-                                        <div><a href=""><i class="fas fa-plus"></i></a></div>
-                                    </td>
-                                    <td>$xxx,xx</td>
-                                    <td><i class="far fa-trash-alt"></i></td>
-                                </tr>
-                                <tr>
-                                    <td class="td-img"><img src="/images/belleza-labial.png" alt="" ></td>
-                                    <td>Nombre del producto</td>
-                                    <td>$xxx,xx</td>
-                                    <td class="quanty">
-                                        <div><a href=""><i class="fas fa-minus"></i></a></div>
-                                        <div>1</div>
-                                        <div><a href=""><i class="fas fa-plus"></i></a></div>
-                                    </td>
-                                    <td>$xxx,xx</td>
-                                    <td><i class="far fa-trash-alt"></i></td>
-                                </tr>
-                                <tr>
-                                    <td class="td-img"><img src="/images/belleza-labial.png" alt="" ></td>
-                                    <td>Nombre del producto</td>
-                                    <td>$xxx,xx</td>
-                                    <td class="quanty">
-                                        <div><a href=""><i class="fas fa-minus"></i></a></div>
-                                        <div>1</div>
-                                        <div><a href=""><i class="fas fa-plus"></i></a></div>
-                                    </td>
-                                    <td>$xxx,xx</td>
-                                    <td><i class="far fa-trash-alt"></i></td>
-                                </tr>
-                            </table>
-                            <div class="bottom-options">
-                                <div class="keepbuying">
-                                    <a href="/" class="link-keepbuying">Seguir Comprando</a>
+            <div class="main-product">
+                <section class="product-container">       
+                    <img src="/images/belleza-labial.png" alt="imagen producto1" width="100%" >                   
+                    <div class="top-product-info">
+                        <ul>
+                            <li>home ></li>
+                            <li>Categoría del producto ></li>
+                            <li>Nombre del producto</li>
+                        </ul>
+                        <article class="brand-name-price">
+                            <div class="brand-name">
+                                <div class="brand">
+                                    <h3>Marca</h3>
                                 </div>
-                                <div class="empty-cart">
-                                    <a href="#" class="link-empty-cart">Vaciar carro</a>
+                                <div class="name-product">
+                                <h5>Nombre del producto</h5>
                                 </div>
                             </div>
+                            <div class="price">
+                                <span>$xxx,xx</span>
+                            </div>
+                        </article>
+                        <div class="buy-button">
+                            <div class="quantity">
+                                <div class="decrease">
+                                    <button class="subtract">-</button>
+                                </div>
+                                <div class="amount">1</div>
+                                <div class="increase">
+                                    <button class="add">+</button>
+                                </div>
+                            </div>
+                            <a href="/cart">
+                                <div class="add-to-cart">
+                                    <div class="add-product">Agregar</div>
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                            </a>
                         </div>
-                        <div class="cart-resume">
-                            <h3>Resumen de compra</h3>
-                            <form action="" class="promo-bar" method="POST">
-                                <div class="promo-code">
-                                    <label></label>
-                                    <input type="text" name="coupon-code" placeholder="Agregar cupón de descuento">
+                        <div class="extra-links">
+                            <a href="#">
+                                <div class="payment-methods">
+                                    <i class="fas fa-credit-card"></i>
+                                    Metodos de pago
                                 </div>
-                                <i class="fas fa-tag"></i>
-                            </form>
-                            <div class="row">
-                                <div class="subtotal">
-                                    <span>Subtotal</span>
+                            </a>
+                            <a href="#">
+                                <div class="shipping-options">
+                                    <i class="fas fa-truck"></i>
+                                    Opciones de envío
                                 </div>
-                                <div class="amount-to-pay">
-                                    <span>$xxx,xx</span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="shipping">
-                                    <span>Envío</span>
-                                </div>
-                                <div class="amount-to-pay">
-                                    <span>$xxx,xx</span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="total">
-                                    <span>Total</span>
-                                </div>
-                                <div class="amount-to-pay">
-                                    <span>$xxx,xx</span>
-                                </div>
-                            </div>
-                            <button type="submit" class="finish-purchease">FINALIZAR COMPRA</button>
+                            </a>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+                <section class="bottom-product-info">
+                    <h3>Descripción del producto</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptate ratione eveniet dolores, repellat ut eligendi voluptatibus accusantium amet, est esse unde et soluta quos, recusandae quo maxime nemo perferendis.</p>
+                    <h4>Opiniones del producto</h4>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    <br><button type="submit" class="product-opinion" >Publica tu opinión</button>
+                    <a href="#">
+                        <div class="look-opinions">
+                            Ver opiniones
+                        </div>
+                    </a>
+                </section>
+            </div>
         </main>
         <div class="footer">
             <div class="wrapper-container-footer">
