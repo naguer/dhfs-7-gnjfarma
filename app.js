@@ -16,7 +16,13 @@ app.get('/cart',(req,res)=>{
     res.sendFile(path.resolve(__dirname,'./views/cart.html'))
 })
 
+app.get('/login',(req,res)=>{
+    res.sendFile(path.resolve(__dirname,'./views/login.html'))
+})
+
+app.get('/registry',(req,res)=>{
+    res.sendFile(path.resolve(__dirname,'./views/registry.html'))
+})
+
 app.listen(port,()=> console.log(`Running on port ${port}`));
 app.use(express.static('public'))
-
-
