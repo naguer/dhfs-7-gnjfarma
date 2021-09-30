@@ -26,7 +26,7 @@
 }
 
 .top-product-info {
-    border-top: solid 1px black;
+    border-top: solid 1px var(--color-black);
 }
 .top-product-info ul {
     display: flex;
@@ -65,13 +65,12 @@
 .buy-button {
     display: flex;
     margin: 20px 20px;
-    background-color: yellow;
     justify-content: space-between;
 }
 
 .quantity {
-    background-color: grey;
-    color: white;
+    background-color: var(--color-grey);
+    color: var(--color-white-cold);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -87,14 +86,14 @@
     height: 7vh;
     text-align: center;
     width: 75%;
-    background-color: black;
+    background-color: var(--color-black);
     display: flex;
 }
 
 .add-to-cart {
-    background-color: black;
+    background-color: var(--color-black);
     position: relative;
-    color: white;
+    color: var(--color-white-cold);
     align-items: center;
     font-size: 18px;
     display: flex;
@@ -110,15 +109,15 @@
 }
 .payment-methods {
     text-align: center;
-    border: solid 1px black;
-    color: black;
+    border: solid 1px var(--color-black);
+    color: var(--color-black);
     height: 2.5vh;
     font-size: 14px;
     padding-top: 2px;
 }
 .shipping-options {
-    border: solid 1px black;
-    color: black;
+    border: solid 1px var(--color-black);
+    color: var(--color-black);
     height: 2.5vh;
     font-size: 14px;
     text-align: center;
@@ -140,16 +139,16 @@
 }
 .product-opinion {
     margin-top: 5px;
-    color: white;
-    background-color: black;
+    color: var(--color-white-cold);
+    background-color: var(--color-black);
     width: 40%;
     height: 2.5vh;
     cursor: pointer;
 }
 .look-opinions {
     margin-top: 5px;
-    color: white;
-    background-color: black;
+    color: var(--color-white-cold);
+    background-color: var(--color-black);
     width: 40%;
     text-align: center;
     height: 2.5vh;

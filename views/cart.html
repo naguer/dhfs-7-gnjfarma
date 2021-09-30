@@ -22,14 +22,14 @@
                         </div>
                     </a>
                 </div>
-                <a class='logo' href="/"><img src="/images/logo-gnjfarma.jpeg"></a>
+                <a class='logo' href="/"><img src="/images/logo-gnjfarma.png"></a>
                 <div class="search-bar">
                     <input type="text" class="searchTerm" placeholder="Buscar">
                     <button type="submit" class="searchButton">
                         <i class="fa fa-search"></i>
                     </button>
                 </div>
-                <a href="/user-profile">
+                <a href="/login">
                     <div class="user">
                         <i class="far fa-user"></i>
                     </div>
@@ -115,98 +115,101 @@
     <main>
         <section>
             <div class="main-container">
-                <div class="container wrapper-container">
-                    <div class="product">
-                        <table class="product-table">
-                            <thead>
+                <div class="wrapper-container">
+                    <div class="container ">
+                        <div class="product">
+                            <table class="product-table">
+                                <thead>
+                                    <tr>
+                                        <th colspan="2">Producto</th>
+                                        <th>Precio</th>
+                                        <th>Cantidad</th>
+                                        <th>Subtotal</th>
+                                        <th>Eliminar</th>
+                                    </tr>
+                                </thead>
                                 <tr>
-                                    <th colspan="2">Producto</th>
-                                    <th>Precio</th>
-                                    <th>Cantidad</th>
-                                    <th>Subtotal</th>
-                                    <th>Eliminar</th>
+                                    <td class="td-img"><img src="/images/belleza-labial.png" alt=""></td>
+                                    <td>Nombre del producto</td>
+                                    <td>$xxx,xx</td>
+                                    <td class="quanty">
+                                        <div><a href=""><i class="fas fa-minus"></i></a></div>
+                                        <div>1</div>
+                                        <div><a href=""><i class="fas fa-plus"></i></a></div>
+                                    </td>
+                                    <td>$xxx,xx</td>
+                                    <td><i class="far fa-trash-alt"></i></td>
                                 </tr>
-                            </thead>
-                            <tr>
-                                <td class="td-img"><img src="/images/belleza-labial.png" alt=""></td>
-                                <td>Nombre del producto</td>
-                                <td>$xxx,xx</td>
-                                <td class="quanty">
-                                    <div><a href=""><i class="fas fa-minus"></i></a></div>
-                                    <div>1</div>
-                                    <div><a href=""><i class="fas fa-plus"></i></a></div>
-                                </td>
-                                <td>$xxx,xx</td>
-                                <td><i class="far fa-trash-alt"></i></td>
-                            </tr>
-                            <tr>
-                                <td class="td-img"><img src="/images/belleza-labial.png" alt=""></td>
-                                <td>Nombre del producto</td>
-                                <td>$xxx,xx</td>
-                                <td class="quanty">
-                                    <div><a href=""><i class="fas fa-minus"></i></a></div>
-                                    <div>1</div>
-                                    <div><a href=""><i class="fas fa-plus"></i></a></div>
-                                </td>
-                                <td>$xxx,xx</td>
-                                <td><i class="far fa-trash-alt"></i></td>
-                            </tr>
-                            <tr>
-                                <td class="td-img"><img src="/images/belleza-labial.png" alt=""></td>
-                                <td>Nombre del producto</td>
-                                <td>$xxx,xx</td>
-                                <td class="quanty">
-                                    <div><a href=""><i class="fas fa-minus"></i></a></div>
-                                    <div>1</div>
-                                    <div><a href=""><i class="fas fa-plus"></i></a></div>
-                                </td>
-                                <td>$xxx,xx</td>
-                                <td><i class="far fa-trash-alt"></i></td>
-                            </tr>
-                        </table>
-                        <div class="bottom-options">
-                            <div class="keepbuying">
-                                <a href="/" class="link-keepbuying">Seguir Comprando</a>
-                            </div>
-                            <div class="empty-cart">
-                                <a href="#" class="link-empty-cart">Vaciar carro</a>
+                                <tr>
+                                    <td class="td-img"><img src="/images/belleza-labial.png" alt=""></td>
+                                    <td>Nombre del producto</td>
+                                    <td>$xxx,xx</td>
+                                    <td class="quanty">
+                                        <div><a href=""><i class="fas fa-minus"></i></a></div>
+                                        <div>1</div>
+                                        <div><a href=""><i class="fas fa-plus"></i></a></div>
+                                    </td>
+                                    <td>$xxx,xx</td>
+                                    <td><i class="far fa-trash-alt"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="td-img"><img src="/images/belleza-labial.png" alt=""></td>
+                                    <td>Nombre del producto</td>
+                                    <td>$xxx,xx</td>
+                                    <td class="quanty">
+                                        <div><a href=""><i class="fas fa-minus"></i></a></div>
+                                        <div>1</div>
+                                        <div><a href=""><i class="fas fa-plus"></i></a></div>
+                                    </td>
+                                    <td>$xxx,xx</td>
+                                    <td><i class="far fa-trash-alt"></i></td>
+                                </tr>
+                            </table>
+                            <div class="bottom-options">
+                                <div class="keepbuying">
+                                    <a href="/" class="link-keepbuying">Seguir Comprando</a>
+                                </div>
+                                <div class="empty-cart">
+                                    <a href="#" class="link-empty-cart">Vaciar carro</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="cart-resume">
-                        <h3>Resumen de compra</h3>
-                        <form action="" class="promo-bar" method="POST">
-                            <div class="promo-code">
-                                <label></label>
-                                <input type="text" name="coupon-code" placeholder="Agregar cupón de descuento">
+                        <div class="cart-resume">
+                            <h3>Resumen de compra</h3>
+                            <form action="" class="promo-bar" method="POST">
+                                <div class="promo-code">
+                                    <label>
+                                    <input type="text" name="coupon-code" placeholder="Agregar cupón de descuento">
+                                    </label>
+                                </div>
+                                <i class="fas fa-tag"></i>
+                            </form>
+                            <div class="row">
+                                <div class="subtotal">
+                                    <span>Subtotal</span>
+                                </div>
+                                <div class="amount-to-pay">
+                                    <span>$xxx,xx</span>
+                                </div>
                             </div>
-                            <i class="fas fa-tag"></i>
-                        </form>
-                        <div class="row">
-                            <div class="subtotal">
-                                <span>Subtotal</span>
+                            <div class="row">
+                                <div class="shipping">
+                                    <span>Envío</span>
+                                </div>
+                                <div class="amount-to-pay">
+                                    <span>$xxx,xx</span>
+                                </div>
                             </div>
-                            <div class="amount-to-pay">
-                                <span>$xxx,xx</span>
+                            <div class="row">
+                                <div class="total">
+                                    <span>Total</span>
+                                </div>
+                                <div class="amount-to-pay">
+                                    <span>$xxx,xx</span>
+                                </div>
                             </div>
+                            <button type="submit" class="finish-purchease">FINALIZAR COMPRA</button>
                         </div>
-                        <div class="row">
-                            <div class="shipping">
-                                <span>Envío</span>
-                            </div>
-                            <div class="amount-to-pay">
-                                <span>$xxx,xx</span>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="total">
-                                <span>Total</span>
-                            </div>
-                            <div class="amount-to-pay">
-                                <span>$xxx,xx</span>
-                            </div>
-                        </div>
-                        <button type="submit" class="finish-purchease">FINALIZAR COMPRA</button>
                     </div>
                 </div>
             </div>
