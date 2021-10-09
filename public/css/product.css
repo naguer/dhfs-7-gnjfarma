@@ -127,6 +127,7 @@
 .bottom-product-info {
     margin-top: 15px;
     width: 100%;
+    margin-left: 10px;
 }
 .bottom-product-info p {
     margin-top: 5px;
@@ -152,4 +153,82 @@
     width: 40%;
     text-align: center;
     height: 2.5vh;
+}
+
+@media (min-width: 576px) {
+    .product-container img {
+        width: 25%;
+        margin: 0;
+        margin-top: 70px;
+    }
+    .product-container {
+        display: flex;
+        justify-content: space-around;
+    }
+    .top-product-info {
+        border-top: none;
+        width: 40%;
+        margin-top: 40px;
+    }
+    .top-product-info ul {
+        margin-left: 10px;
+        
+    }
+    .brand-name-price {
+        display: block;
+        text-align: center;
+    }
+    .brand-name , .price {
+        width: 100%;
+    }
+    .brand-name {
+        display: block;
+        font-size: 20px;
+    }
+    .brand , .name-product {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .buy-button a, .quantity{
+        height: 5vh;
+    }
+    .extra-links a {
+        width: 45%;
+    }
+    .payment-methods , .shipping-options {
+        height: 4.3vh;
+    }
+}
+
+@media (min-width: 760px) {
+    .payment-methods , .shipping-options {
+        height: 2.5vh;
+    }
+    .extra-links a {
+        width: 40%;
+    }
+}
+
+@media (min-width: 1100px){
+    .brand-name {
+        margin-bottom: 20px;
+    }
+    .buy-button {
+        padding-top: 30px;
+    }
+    .extra-links {
+        margin-top: 40px;
+    }
+    .product-opinion , .look-opinions {
+        width: 25%;
+    }
+    .bottom-product-info {
+        margin-left: 200px;
+    }
+    .bottom-product-info p {
+        width: 60%;
+    }
+    .top-product-info ul {
+        justify-content: space-around;
+    }
 }
