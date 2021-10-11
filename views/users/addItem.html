@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Añadir producto</title>
+        <link rel="stylesheet" href="/css/addItem.css">
+    </head>
+    <body>
+        <form action="" class="form-container" method="POST">
+            <div class="title">
+                <h1>Añadir producto</h1>
+            </div>
+            <div class="form-unitary">
+                <label for="id number">Id</label>
+                <input type="text" name="id-number" id="id number" required>
+            </div>
+            <div class="form-unitary">
+                <label for="product name">Nombre del producto</label>
+                <input type="text" name="product-name" id="product name" required>
+            </div>
+            <div class="form-unitary">
+                <label for="brand name">Marca</label>
+                <input type="text" name="product-brand" id="brand name" required>
+            </div>
+            <div class="form-unitary">
+                <label class="description" for="description">Descripción</label>
+                <textarea name="product-description" id="description" cols="30" rows="5" required></textarea>
+            </div>
+            <div class="form-unitary">
+                <label for="img">Imágen</label>
+                <input type="file" name="product-img" id="img" required>
+            </div>
+            <div class="form-unitary">
+                <label>Categoría del producto</label>
+                <select name="product-category" required>
+                    <option selected value="0">Elige una opción</option>
+                    <optgroup label="Salud">
+                        <option value="1">Higiene personal</option>
+                        <option value="2">Higiene oral</option>
+                        <option value="3">Cuidado del bebé</option>
+                    </optgroup>
+                    <optgroup label="Belleza">
+                        <option value="4">Labios</option>
+                        <option value="5">Ojos</option>
+                        <option value="6">Rostro</option>
+                    </optgroup>
+                    <optgroup label="Limpieza">
+                        <option value="7">Limpieza hogar</option>
+                        <option value="8">Limpieza ropa</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="form-unitary">
+                <label for="colors">Colores</label>
+                <input type="text" name="product-color" id="colors">
+            </div>
+            <div class="form-unitary">
+                <label for="stock">Stock</label>
+                <input type="text" name="Product-stock" id="stock" required>
+            </div>
+            <div class="form-unitary">
+                <label for="product price">Precio unitario</label>
+                <input type="text" name="product-price" id="product price" required>
+            </div>
+            <div class="buttons">
+                <a href="/crud"><button class="add" type="submit">Añadir</button></a>
+                <button class="delete" type="submit">Borrar</button>
+            </div>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CRUD</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    rel="stylesheet" />
+    <link rel="stylesheet" href="/css/crud.css">
+    </head>
+    <body>
+        <div class="first-lane">
+            <h1>Listado de productos</h1>
+        </div>
+        <div class="second-lane">
+            <form class="search-product" action="" method="GET">
+                <div class="search-product-bar">
+                    <label></label>
+                    <input type="text" name="search" placeholder="Buscar productos">
+                </div>
+                <i class="fas fa-search"></i>
+            </form>
+            <div class="add-product">
+                <a href="/addItem">Añadir producto</a>
+            </div>
+        </div>
+        <div class="table-conteiner">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nombre del producto</th>
+                        <th>Marca</th>
+                        <th>Descripción</th>
+                        <th>Imagen</th>
+                        <th>Categoría</th>
+                        <th>Colores</th>
+                        <th>Stock</th>
+                        <th>Precio</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>5</td>
+                    <td>Labial líquido</td>
+                    <td>Maybelline</td>
+                    <td>Lorem ipsum dolor sit amet.</td>
+                    <td class="td-img"><img src="/images/belleza-labial.png" alt="" width="70"></td>
+                    <td>Labiales</td>
+                    <td>Rojo</td>
+                    <td>25</td>
+                    <td>$xxxx,xx</td>
+                    <td class="actions">
+                        <form action="" class="edit-product" method="POST">
+                                <a href="/editItem">
+                                    <i class="fas fa-edit"></i>
+                                </a>
+                        </form>
+                        <form action="" class="delete-product" method="POST">
+                            <a href="#">
+                                <i class="fas fa-trash-alt"></i>
+                            </a>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Labial líquido</td>
+                    <td>Maybelline</td>
+                    <td>Lorem ipsum dolor sit amet.</td>
+                    <td class="td-img"><img src="/images/belleza-labial.png" alt="" width="70"></td>
+                    <td>Labiales</td>
+                    <td>Rojo</td>
+                    <td>25</td>
+                    <td>$xxxx,xx</td>
+                    <td class="actions">
+                        <form action="" class="edit-product" method="POST">
+                                <a href="/editItem">
+                                    <i class="fas fa-edit"></i>
+                                </a>
+                        </form>
+                        <form action="" class="delete-product" method="POST">
+                            <a href="#">
+                                <i class="fas fa-trash-alt"></i>
+                            </a>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Labial líquido</td>
+                    <td>Maybelline</td>
+                    <td>Lorem ipsum dolor sit amet.</td>
+                    <td class="td-img"><img src="/images/belleza-labial.png" alt="" width="70"></td>
+                    <td>Labiales</td>
+                    <td>Rojo</td>
+                    <td>25</td>
+                    <td>$xxxx,xx</td>
+                    <td class="actions">
+                        <form action="" class="edit-product" method="POST">
+                                <a href="/editItem">
+                                    <i class="fas fa-edit"></i>
+                                </a>
+                        </form>
+                        <form action="" class="delete-product" method="POST">
+                            <a href="#">
+                                <i class="fas fa-trash-alt"></i>
+                            </a>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Labial líquido</td>
+                    <td>Maybelline</td>
+                    <td>Lorem ipsum dolor sit amet.</td>
+                    <td class="td-img"><img src="/images/belleza-labial.png" alt="" width="70"></td>
+                    <td>Labiales</td>
+                    <td>Rojo</td>
+                    <td>25</td>
+                    <td>$xxxx,xx</td>
+                    <td class="actions">
+                        <form action="" class="edit-product" method="POST">
+                                <a href="/editItem">
+                                    <i class="fas fa-edit"></i>
+                                </a>
+                        </form>
+                        <form action="" class="delete-product" method="POST">
+                            <a href="#">
+                                <i class="fas fa-trash-alt"></i>
+                            </a>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Labial líquido</td>
+                    <td>Maybelline</td>
+                    <td>Lorem ipsum dolor sit amet.</td>
+                    <td class="td-img"><img src="/images/belleza-labial.png" alt="" width="70"></td>
+                    <td>Labiales</td>
+                    <td>Rojo</td>
+                    <td>25</td>
+                    <td>$xxxx,xx</td>
+                    <td class="actions">
+                        <form action="" class="edit-product" method="POST">
+                                <a href="/editItem">
+                                    <i class="fas fa-edit"></i>
+                                </a>
+                        </form>
+                        <form action="" class="delete-product" method="POST">
+                            <a href="#">
+                                <i class="fas fa-trash-alt"></i>
+                            </a>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Labial líquido</td>
+                    <td>Maybelline</td>
+                    <td>Lorem ipsum dolor sit amet.</td>
+                    <td class="td-img"><img src="/images/belleza-labial.png" alt="" width="70"></td>
+                    <td>Labiales</td>
+                    <td>Rojo</td>
+                    <td>25</td>
+                    <td>$xxxx,xx</td>
+                    <td class="actions">
+                        <form action="" class="edit-product" method="POST">
+                                <a href="/editItem">
+                                    <i class="fas fa-edit"></i>
+                                </a>
+                        </form>
+                        <form action="" class="delete-product" method="POST">
+                            <a href="#">
+                                <i class="fas fa-trash-alt"></i>
+                            </a>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Labial líquido</td>
+                    <td>Maybelline</td>
+                    <td>Lorem ipsum dolor sit amet.</td>
+                    <td class="td-img"><img src="/images/belleza-labial.png" alt="" width="70"></td>
+                    <td>Labiales</td>
+                    <td>Rojo</td>
+                    <td>25</td>
+                    <td>$xxxx,xx</td>
+                    <td class="actions">
+                        <form action="" class="edit-product" method="POST">
+                                <a href="/editItem">
+                                    <i class="fas fa-edit"></i>
+                                </a>
+                        </form>
+                        <form action="" class="delete-product" method="POST">
+                            <a href="#">
+                                <i class="fas fa-trash-alt"></i>
+                            </a>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

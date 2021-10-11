@@ -1,0 +1,113 @@
+*{
+    font-family: "Glory";
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+}
+
+.first-lane {
+    margin-top: 50px;
+    margin-left: 80px;
+    margin-bottom: 10px;
+}
+.first-lane h1 {
+    color: #2e2e2e;
+    width: 40%;
+}
+
+.second-lane {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.add-product {
+    width: 50%;
+    text-align: center;
+}
+.add-product a {
+    background-color: rgb(12, 158, 12);
+    text-decoration: none;
+    color: #e6e6e6;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.search-product {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-radius: 10px;
+    width: 20%;
+    background-color: rgb(197, 213, 255);
+    position: relative;
+    margin-bottom: 10px;
+    margin-left: 80px;
+}
+.search-product-bar {
+    color:#2e2e2e;
+    width: 80%;
+    background-color: rgb(197, 213, 255);;
+    border-radius: 10px;
+}
+.search-product-bar input{
+    width: 100%;
+    height: 3vh;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(197, 213, 255);
+    outline: none;
+}
+.search-product-bar input::placeholder {
+    text-align: center;
+}
+.search-product .fa-search {
+    height: 2.5vh;
+    position: absolute;
+    right: 10px;
+    top: 3px;
+    background-color: rgb(197, 213, 255);;
+}
+
+table{
+    width: 80%;
+}
+thead {
+    background-color: rgb(197, 213, 255);
+    height: 3vh;
+}
+tr {
+    text-align: center;
+}
+
+table {
+    margin-left: 20px;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 22px;
+    border-radius: 10px;
+    position: relative;
+}
+.edit-product {
+    color:black;
+    background-color: rgb(12, 158, 12);
+    border-radius: 10px;
+    width: 30%;
+    padding: 5px;
+}
+.delete-product{
+    color:black;
+    background-color: rgb(209, 9, 9);
+    border-radius: 10px;
+    width: 30%;
+    padding: 5px;
+}
+.fa-edit, .fa-trash-alt {
+    color: black;
+    font-weight: normal;
+}

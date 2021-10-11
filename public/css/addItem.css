@@ -1,0 +1,74 @@
+*{
+    font-family: "Glory";
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+}
+
+.title {
+    margin: 20px 40px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(197, 213, 255);
+    width: 40%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 10px 0;
+    border-radius: 15px;
+    
+}
+
+.form-unitary {   
+    margin-bottom: 15px;
+    margin-left: 30px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+} 
+.form-unitary input {
+    border-radius: 5px;
+    border: none;
+    height: 2.8vh;
+    outline: none;
+    width: 40%;
+}
+
+.description {
+    vertical-align: top;
+}
+textarea {
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    width: 40%;
+}
+
+select{
+    height: 2.8vh;
+    outline: none;
+    width: 40%;
+}
+
+.buttons {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.add{
+    padding: 4px 18px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(67, 192, 84);
+}
+.delete {
+    padding: 4px 18px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(223, 37, 68);
+}
