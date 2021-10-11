@@ -24,5 +24,17 @@ app.get('/registry',(req,res)=>{
     res.sendFile(path.resolve(__dirname,'./views/users/registry.html'))
 })
 
+app.get('/crud',(req,res)=>{
+    res.sendFile(path.resolve(__dirname,'./views/users/crud.html'))
+})
+
+app.get('/addItem',(req,res)=>{
+    res.sendFile(path.resolve(__dirname,'./views/users/addItem.html'))
+})
+
+app.get('/editItem',(req,res)=>{
+    res.sendFile(path.resolve(__dirname,'./views/users/editItem.html'))
+})
+
 app.listen(port,()=> console.log(`Running on port ${port}`));
 app.use(express.static('public'))
