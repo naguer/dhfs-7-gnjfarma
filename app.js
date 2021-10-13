@@ -1,4 +1,5 @@
 const express = require("express");
+const router = express.Router();
 const { dirname } = require("path");
 const path = require("path");
 const port = 3000;
@@ -6,23 +7,28 @@ const app = express();
 
 app.set('view engine', 'ejs');
 
-app.get('/',(req,res)=>{
+/* Routes */
+const mainRouter = require('.routes/main');
+const usersRouter = require('.routes/users');
+const productsRouter = require('.routes/products');
+
+router.get('/',(req,res)=>{
     res.sendFile(path.resolve(__dirname,'./views/index.html'))
 })
 
-app.get('/product', (req,res)=>{
+router.get('/product', (req,res)=>{
     res.sendFile (path.resolve(__dirname, './views/products/product.html'))
 })
 
-app.get('/cart',(req,res)=>{
+router.get('/cart',(req,res)=>{
     res.sendFile(path.resolve(__dirname,'./views/products/cart.html'))
 })
 
-app.get('/login',(req,res)=>{
+router.get('/login',(req,res)=>{
     res.sendFile(path.resolve(__dirname,'./views/users/login.html'))
 })
 
-app.get('/registry',(req,res)=>{
+router.get('/registry',(req,res)=>{
     res.sendFile(path.resolve(__dirname,'./views/users/registry.html'))
 })
 
