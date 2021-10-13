@@ -4,6 +4,8 @@ const path = require("path");
 const port = 3000;
 const app = express();
 
+app.set('view engine', 'ejs');
+
 app.get('/',(req,res)=>{
     res.sendFile(path.resolve(__dirname,'./views/index.html'))
 })
@@ -24,5 +26,6 @@ app.get('/registry',(req,res)=>{
     res.sendFile(path.resolve(__dirname,'./views/users/registry.html'))
 })
 
-app.listen(port,()=> console.log(`Running on port ${port}`));
 app.use(express.static('public'))
+
+app.listen(port,()=> console.log(`Running on port ${port}`));
