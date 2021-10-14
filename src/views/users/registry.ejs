@@ -1,45 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Registro</title>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        rel="stylesheet" />
-        <link rel="stylesheet" href="/css/style.css">
-        <link rel="stylesheet" href="/css/forms.css">
-    </head>
-    <body>
-        <header>
-            <div class="wrapper-container">
-                <div class="top-box">
-                    <div class="burger-menu">
-                        <a onclick="burgerMenuClick()">
-                            <div class="burger">
-                                <i class="fas fa-bars"></i>
-                            </div>
-                        </a>
-                    </div>
-                    <a class='logo' href="/"><img src="/images/logo-gnjfarma.png"></a>
-                    <div class="search-bar">
-                        <input type="text" class="searchTerm" placeholder="Buscar">
-                        <button type="submit" class="searchButton">
-                            <i class="fa fa-search"></i>
-                        </button>
-                    </div>
-                    <a href="/login"><div class="user">
-                        <i class="far fa-user"></i>
-                    </div>
-                     </a>
-                    <a href="/cart"><div class="my-cart">
-                        <i class="fas fa-shopping-cart"></i>
-                        <div class="my-order">Mi compra</div>
-                        </div>
-                    </a>
-                </div>
-        </header>
 
+<%- include('../partials/head') %>
+
+<body>
+    <%- include('../partials/header') %>
         <section class="form-login">
             <h5>Te pedimos que ingreses tus datos:</h5>
             <input class="controls" type="text" name="name" value="" placeholder="Nombre">
@@ -47,46 +12,8 @@
             <input class="controls" type="email" name="mail" value="" placeholder="Mail">
             <input class="controls" type="password" name="clave" value="" placeholder="Contraseña">
             <input class="buttons" type="submit" value="Crear Cuenta" name="crear-cuenta">
-            
-          </section>
 
-   <footer>
-    <div class="footer">
-        <div class="wrapper-container-footer">
-            <div class="institucional link-list">
-                <h4>Institucional</h4>
-                <ul class="institucional-items">
-                    <li>¿Quienes somos?</li>
-                    <li>Trabaja con nosotros</li>
-                    <li>Nuestra empresa</li>
-                </ul>
-            </div>
-            <div class="contact  link-list">
-                <h4>Atención al cliente</h4>
-                <ul class="contact-items">
-                    <li>Contacto</li>
-                    <li>Terminos y condiciones</li>
-                    <li>Preguntas frecuentes</li>
-                </ul>
-            </div>
-            <div class="online-shopping  link-list">
-                <h4>Compra online</h4>
-                <ul class="online-shopping-items">
-                    <li>Mis pedidos</li>
-                    <li>Puntos de retiro</li>
-                    <li>Mi carrito</li>
-                </ul>
-            </div>
-            <div class="social-networks">
-                <h4>Redes sociales</h4>
-                <ul class="social-networks-items">
-                    <li><i class="fab fa-facebook"></i></li>
-                    <li><i class="fab fa-instagram"></i></li>
-                    <li><i class="fab fa-twitter"></i></li>
-                    <li><i class="fab fa-youtube"></i></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-  </footer>
+        </section>
+
+     <%- include('../partials/footer') %>
 </body>

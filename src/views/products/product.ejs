@@ -1,223 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Producto</title>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-        <link rel="stylesheet" href="/css/style.css">
-        <link rel="stylesheet" href="/css/product.css">
-    </head>
-    <body>
-        <header>
-            <div class="wrapper-container">
-                <div class="top-box">
-                    <div class="burger-menu">
-                        <a onclick="burgerMenuClick()">
-                            <div class="burger">
-                                <i class="fas fa-bars"></i>
-                            </div>
-                        </a>
-                    </div>
-                    <a class='logo' href="/"><img src="/images/logo-gnjfarma.png"></a>
-                    <div class="search-bar">
-                        <input type="text" class="searchTerm" placeholder="Buscar">
-                        <button type="submit" class="searchButton">
-                            <i class="fa fa-search"></i>
-                        </button>
-                    </div>
-                    <a href="/user-profile"><div class="user">
-                        <i class="far fa-user"></i>
-                    </div>
-                    </a>
-                    <a href="/cart"><div class="my-cart">
-                        <i class="fas fa-shopping-cart"></i>
-                        <div class="my-order">Mi compra</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="burger-menu-items" id="burger-menu-items">
-                    <div class="burger-menu-item">
-                        <a href="#">
-                            Salud
-                            <i class="fas fa-angle-down"></i>
-                            <i class="fas fa-angle-up"></i>
-                        </a>
-                        <ul>
-                            <li><a href="">Higiene personal</a></li>
-                            <li><a href="">Higiene oral</a></li>
-                            <li><a href="">Cuidado del bebé</a></li>
-                        </ul>
-                    </div>
-                    <div class="burger-menu-item">
-                        <a href="#">
-                            Belleza
-                            <i class="fas fa-angle-down"></i>
-                            <i class="fas fa-angle-up"></i>
-                        </a>
-                        <ul>
-                            <li><a href="">Labios</a></li>
-                            <li><a href="">Ojos</a></li>
-                            <li><a href="">Rostro</a></li>
-                        </ul>
-                    </div>
-                    <div class="burger-menu-item">
-                        <a href="#">
-                            Limpieza
-                            <i class="fas fa-angle-down"></i>
-                            <i class="fas fa-angle-up"></i>
-                        </a>
-                        <ul>
-                            <li><a href="">Limpieza hogar</a></li>
-                            <li><a href="">Limpieza ropa</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <br>
-                <nav>
-                    <ul class='categories'>
-                        <li class="category"><a href="#">Salud</a>
-                            <i class="fas fa-angle-down"></i>
-                            <i class="fas fa-angle-up"></i>
-                            <ul>
-                                <li><a href="">Higiene personal</a></li>
-                                <li><a href="">Higiene oral</a></li>
-                                <li><a href="">Cuidado del bebé</a></li>
-                            </ul>
-                        </li>
-                        <li class="category"><a href="#">Belleza</a>
-                            <i class="fas fa-angle-down"></i>
-                            <i class="fas fa-angle-up"></i>
-                            <ul>
-                                <li><a href="">Labios</a></li>
-                                <li><a href="">Ojos</a></li>
-                                <li><a href="">Rostro</a></li>
-                            </ul>
-                        </li>
-                        <li class="category"><a href="#">Limpieza</a>
-                            <i class="fas fa-angle-down"></i>
-                            <i class="fas fa-angle-up"></i>
-                            <ul>
-                                <li><a href="">Limpieza hogar</a></li>
-                                <li><a href="">Limpieza ropa</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
+<%- include('../partials/head') %>
 
-            </div>
-        </header>
-        <main>
-            <div class="main-product">
-                <section class="product-container wrapper-container">       
-                    <img src="/images/belleza-labial.png" alt="imagen producto1" width="100%" >                   
-                    <div class="top-product-info">
-                        <ul>
-                            <a href="/"><li>home ></li></a>
-                            <li>Categoría del producto ></li>
-                            <li>Nombre del producto</li>
-                        </ul>
-                        <article class="brand-name-price">
-                            <div class="brand-name">
-                                <div class="brand">
-                                    <h3>Marca</h3>
+    <body>
+        <%- include('../partials/header') %>
+            <main>
+                <div class="main-product">
+                    <section class="product-container wrapper-container">
+                        <img src="/images/belleza-labial.png" alt="imagen producto1" width="100%">
+                        <div class="top-product-info">
+                            <ul>
+                                <a href="/">
+                                    <li>home ></li>
+                                </a>
+                                <li>Categoría del producto ></li>
+                                <li>Nombre del producto</li>
+                            </ul>
+                            <article class="brand-name-price">
+                                <div class="brand-name">
+                                    <div class="brand">
+                                        <h3>Marca</h3>
+                                    </div>
+                                    <div class="name-product">
+                                        <h5>Nombre del producto</h5>
+                                    </div>
                                 </div>
-                                <div class="name-product">
-                                <h5>Nombre del producto</h5>
+                                <div class="price">
+                                    <span>$xxx,xx</span>
                                 </div>
+                            </article>
+                            <div class="buy-button">
+                                <div class="quantity">
+                                    <div class="decrease">
+                                        <button class="subtract">-</button>
+                                    </div>
+                                    <div class="amount">1</div>
+                                    <div class="increase">
+                                        <button class="add">+</button>
+                                    </div>
+                                </div>
+                                <a href="/cart">
+                                    <div class="add-to-cart">
+                                        <div class="add-product">Agregar</div>
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                </a>
                             </div>
-                            <div class="price">
-                                <span>$xxx,xx</span>
+                            <div class="extra-links">
+                                <a href="#">
+                                    <div class="payment-methods">
+                                        <i class="fas fa-credit-card"></i>
+                                        Metodos de pago
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="shipping-options">
+                                        <i class="fas fa-truck"></i>
+                                        Opciones de envío
+                                    </div>
+                                </a>
                             </div>
-                        </article>
-                        <div class="buy-button">
-                            <div class="quantity">
-                                <div class="decrease">
-                                    <button class="subtract">-</button>
-                                </div>
-                                <div class="amount">1</div>
-                                <div class="increase">
-                                    <button class="add">+</button>
-                                </div>
-                            </div>
-                            <a href="/cart">
-                                <div class="add-to-cart">
-                                    <div class="add-product">Agregar</div>
-                                    <i class="fas fa-shopping-cart"></i>
-                                </div>
-                            </a>
                         </div>
-                        <div class="extra-links">
-                            <a href="#">
-                                <div class="payment-methods">
-                                    <i class="fas fa-credit-card"></i>
-                                    Metodos de pago
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="shipping-options">
-                                    <i class="fas fa-truck"></i>
-                                    Opciones de envío
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </section>
-                <section class="bottom-product-info wrapper-container">
-                    <h3>Descripción del producto</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptate ratione eveniet dolores, repellat ut eligendi voluptatibus accusantium amet, est esse unde et soluta quos, recusandae quo maxime nemo perferendis.</p>
-                    <h4>Opiniones del producto</h4>
+                    </section>
+                    <section class="bottom-product-info wrapper-container">
+                        <h3>Descripción del producto</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptate ratione eveniet
+                            dolores, repellat ut eligendi voluptatibus accusantium amet, est esse unde et soluta quos,
+                            recusandae quo maxime nemo perferendis.</p>
+                        <h4>Opiniones del producto</h4>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="far fa-star"></i>
                         <i class="far fa-star"></i>
-                    <br><button type="submit" class="product-opinion" >Publica tu opinión</button>
-                    <a href="#">
-                        <div class="look-opinions">
-                            Ver opiniones
-                        </div>
-                    </a>
-                </section>
-            </div>
-        </main>
-        <div class="footer">
-            <div class="wrapper-container-footer">
-                <div class="institucional link-list">
-                    <h4>Institucional</h4>
-                    <ul class="institucional-items">
-                        <li>¿Quienes somos?</li>
-                        <li>Trabaja con nosotros</li>
-                        <li>Nuestra empresa</li>
-                    </ul>
+                        <br><button type="submit" class="product-opinion">Publica tu opinión</button>
+                        <a href="#">
+                            <div class="look-opinions">
+                                Ver opiniones
+                            </div>
+                        </a>
+                    </section>
                 </div>
-                <div class="contact  link-list">
-                    <h4>Atención al cliente</h4>
-                    <ul class="contact-items">
-                        <li>Contacto</li>
-                        <li>Terminos y condiciones</li>
-                        <li>Preguntas frecuentes</li>
-                    </ul>
-                </div>
-                <div class="online-shopping  link-list">
-                    <h4>Compra online</h4>
-                    <ul class="online-shopping-items">
-                        <li>Mis pedidos</li>
-                        <li>Puntos de retiro</li>
-                        <li>Mi carrito</li>
-                    </ul>
-                </div>
-                <div class="social-networks">
-                    <h4>Redes sociales</h4>
-                    <ul class="social-networks-items">
-                        <li><i class="fab fa-facebook"></i></li>
-                        <li><i class="fab fa-instagram"></i></li>
-                        <li><i class="fab fa-twitter"></i></li>
-                        <li><i class="fab fa-youtube"></i></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+            </main>
+            <%- include('../partials/footer') %>
     </body>
+
 </html>
