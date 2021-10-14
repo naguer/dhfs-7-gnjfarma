@@ -7,7 +7,7 @@ let controller = {
     registered: function (req, res) {
         
     },
-    login (req,res) {
+    login: (req,res)=>{
         res.render('login');
     }
 }
