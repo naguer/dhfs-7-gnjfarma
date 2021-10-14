@@ -35,8 +35,9 @@ thead {
     width: 80px;
     cursor: pointer;
 }
-tr img {
+.td-img img {
     text-align: left;
+    width:100%;
 }
 .quanty {
     display: flex;
@@ -167,7 +168,7 @@ tr img {
         display: flex;
         flex-wrap: wrap;
     }
-    .product {
+    .product-cart {
         width: 60%;
             
     }
