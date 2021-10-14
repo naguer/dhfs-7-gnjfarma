@@ -9,6 +9,15 @@ let controller = {
     },
     login: (req,res)=>{
         res.render('users/login');
+    },
+    crud: (req,res)=>{
+        res.render('users/crud')
+    },
+    editItem: (req,res)=>{
+        res.render('users/editItem')
+    },
+    addItem: (req,res)=>{
+        res.render('users/addItem')
     }
 }
 
