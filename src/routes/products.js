@@ -6,4 +6,10 @@ router.get('/cart', controller.cart);
 
 router.get('/product', controller.product);
 
+router.get('/crud', controller.crud);
+
+router.get('/editItem', controller.editItem);
+
+router.get('/addItem', controller.addItem);
+
 module.exports = router;

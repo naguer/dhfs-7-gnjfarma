@@ -1,0 +1,62 @@
+[
+    {   
+        "id": 1,
+        "name": "Labial líquido",
+        "marca": "Maybelline",
+        "description": "Lorem ipsum dolor sit amet.",
+        "image": "/images/products/belleza-labial.png",
+        "category": "Belleza",
+        "colors": "red",
+        "stock": 25,
+        "price": 2000
+
+    },
+
+    {   
+        "id": 2,
+        "name": "Shampoo manzanilla",
+        "marca": "Johnsons baby",
+        "description": "Lorem ipsum dolor sit amet.",
+        "image": "/images/products/shampoo-manzanilla.jpg",
+        "category": "Salud",
+        "colors": "",
+        "stock": 25,
+        "price": 2000
+    },
+    
+    {  
+        "id": 3,
+        "name": "Satial food",
+        "marca": "Satial",
+        "description": "Lorem ipsum dolor sit amet.",
+        "image": "/images/products/satial-food.jpg",
+        "category": "Salud",
+        "colors": "",
+        "stock": 25,
+        "price": 2000
+    },
+        
+    {   
+        "id": 4,
+        "name": "Limpiador gel con lavandina",
+        "marca": "Lysoform",
+        "description": "Lorem ipsum dolor sit amet.",
+        "image": "/images/products/lavandina-en-gel.jpg",
+        "category": "Limpieza",
+        "colors": "",
+        "stock": 25,
+        "price": 2000
+    },
+
+    {   
+        "id": 5,
+        "name": "Enjuague bucal",
+        "marca": "Listerine",
+        "description": "Lorem ipsum dolor sit amet.",
+        "image": "/images/products/enjuague-bucal.jpg",
+        "category": "Salud",
+        "colors": "",
+        "stock": 25,
+        "price": 2000
+    }
+]

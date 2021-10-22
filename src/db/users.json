@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "nombre": "Diego",
+        "apellido": "Pérez",
+        "email": "Diego.pérez@gmail.com",
+        "contraeña": "diego123",
+        "categoría": "Vendedor",
+        "avatar": "default-image-user.png"
+
+    },
+    {
+        "id": 2,
+        "nombre": "Juana",
+        "apellido": "García",
+        "email": "Juana.garcía@gmail.com",
+        "contraeña": "juana123",
+        "categoría": "Vendedor",
+        "avatar": "default-image-user.png"
+
+    },
+    {
+        "id": 3,
+        "nombre": "Pedro",
+        "apellido": "Nara",
+        "email": "Pedro.nara@gmail.com",
+        "contraeña": "pedro123",
+        "categoría": "Comprador",
+        "avatar": "default-image-user.png"
+
+    },
+    {
+        "id": 4,
+        "nombre": "Paula",
+        "apellido": "Icardi",
+        "email": "Paula.icardi@gmail.com",
+        "contraeña": "paula123",
+        "categoría": "Comprador",
+        "avatar": "default-image-user.png"
+
+    }
+]

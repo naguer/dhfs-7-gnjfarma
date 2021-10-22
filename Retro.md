@@ -35,3 +35,23 @@
 ### Hacer menos
 
 ### Dejar de hacer
+
+-----------------------------------------------
+
+## Retro Sprint 3
+
+### Comenzar a hacer
+- Manejar mejor los tiempos de entrega.
+
+### Hacer más
+- Hacer más meetings.
+
+### Continuar haciendo
+- Dividir tareas.
+- Trabajar colaborativamente.
+
+### Hacer menos
+- 
+
+### Dejar de hacer
+- Confiarnos con el tiempo de entrega.
