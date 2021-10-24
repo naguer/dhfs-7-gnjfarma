@@ -1,0 +1,22 @@
+<tr>
+    <td><%= product.name %> </td>
+    <td><%= product.brand %></td>
+    <td><%= product.description %></td>
+    <td class="td-img"><img src="/images/products/<%= product.image %>" alt="" width="70"></td>
+    <td><%= product.category %></td>
+    <td><%= product.colors %></td>
+    <td><%= product.stock %></td>
+    <td>$<%= product.price %></td>
+    <td class="actions">
+        <form action="" class="edit-product" method="POST">
+                <a href="/products/editItem">
+                    <i class="fas fa-edit"></i>
+                </a>
+        </form>
+        <form action="" class="delete-product" method="POST">
+            <a href="#">
+                <i class="fas fa-trash-alt"></i>
+            </a>
+        </form>
+    </td>
+</tr>

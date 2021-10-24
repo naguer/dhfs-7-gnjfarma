@@ -1,12 +1,12 @@
 <div class="product">
-    <a href="/products/product">
-        <img src="/images/products/belleza-labial.png" alt="imagen producto1">
+    <a href="/products/detail/<%=product.id %> ">
+        <img src="/images/products/<%= product.image %> " alt="imagen producto <%= product.id %> ">
         <div class="product-detail">
             <div class="product-detail-description">
-                Labial Maybelline
+                <%= product.name %> 
             </div>
             <div class="product-detail-price">
-                $1.500
+               $<%= product.price %> 
             </div>
         </div>
     </a>

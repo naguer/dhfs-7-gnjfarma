@@ -7,26 +7,26 @@
             <main>
                 <div class="main-product">
                     <section class="product-container wrapper-container">
-                        <img src="/images/products/belleza-labial.png" alt="imagen producto1" width="100%">
+                        <img src="/images/products/<%= product.image %> " alt="imagen producto <%= product.id %>" width="100%">
                         <div class="top-product-info">
                             <ul>
                                 <a href="/">
                                     <li>home ></li>
                                 </a>
-                                <li>Categoría del producto ></li>
-                                <li>Nombre del producto</li>
+                                <li><%= product.category %>></li>
+                                <li><%= product.name %></li>
                             </ul>
                             <article class="brand-name-price">
                                 <div class="brand-name">
                                     <div class="brand">
-                                        <h3>Marca</h3>
+                                        <h3><%= product.brand %></h3>
                                     </div>
                                     <div class="name-product">
-                                        <h5>Nombre del producto</h5>
+                                        <h5><%= product.name %></h5>
                                     </div>
                                 </div>
                                 <div class="price">
-                                    <span>$xxx,xx</span>
+                                    <span>$ <%= product.price %> </span>
                                 </div>
                             </article>
                             <div class="buy-button">
@@ -64,9 +64,7 @@
                     </section>
                     <section class="bottom-product-info wrapper-container">
                         <h3>Descripción del producto</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptate ratione eveniet
-                            dolores, repellat ut eligendi voluptatibus accusantium amet, est esse unde et soluta quos,
-                            recusandae quo maxime nemo perferendis.</p>
+                        <p><%= product.description %></p>
                         <h4>Opiniones del producto</h4>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>

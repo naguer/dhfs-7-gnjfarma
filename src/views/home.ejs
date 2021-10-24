@@ -33,10 +33,37 @@
                 <a href="#" class="product-category-view-all">Ver todo</a>
             </div>
             <div class="product-category-products">
-                <%- include('partials/homeProductItem') %>
-                <%- include('partials/homeProductItem') %>
-                <%- include('partials/homeProductItem') %>
-                <%- include('partials/homeProductItem') %>
+                <%productsBeauty.forEach(product=>{%>
+                    <%- include('partials/homeProductItem',{product}) %>
+                <%   })%>
+                
+            </div>
+        </div>
+    </div><div class="product-category">
+        <div class="wrapper-container">
+            <div class="product-category-title">
+                <h3>Salud</h3>
+                <a href="#" class="product-category-view-all">Ver todo</a>
+            </div>
+            <div class="product-category-products">
+                <%productsHealthy.forEach(product=>{%>
+                    <%- include('partials/homeProductItem',{product}) %>
+                <%   })%>
+                
+            </div>
+        </div>
+    </div>
+    <div class="product-category">
+        <div class="wrapper-container">
+            <div class="product-category-title">
+                <h3>Limpieza</h3>
+                <a href="#" class="product-category-view-all">Ver todo</a>
+            </div>
+            <div class="product-category-products">
+                <%productsCleaning.forEach(product=>{%>
+                    <%- include('partials/homeProductItem',{product}) %>
+                <%   })%>
+                
             </div>
         </div>
     </div>
