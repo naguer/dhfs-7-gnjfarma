@@ -9,7 +9,7 @@
     <td>$<%= product.price %></td>
     <td class="actions">
         <form action="" class="edit-product" method="POST">
-                <a href="/products/editItem">
+                <a href="/products/editItem/<%= product.id %>">
                     <i class="fas fa-edit"></i>
                 </a>
         </form>

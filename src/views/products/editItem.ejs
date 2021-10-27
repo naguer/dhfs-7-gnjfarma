@@ -8,29 +8,29 @@
     <link rel="stylesheet" href="/css/editItem.css">
 </head>
 <body>
-    <form action="" class="form-container" method="POST">
+    <form action="/products/editItem/<%= product.id %>?_method=PUT" class="form-container" method="POST">
         <div class="title">
             <h1>Editar producto</h1>
         </div>
         <div class="form-unitary">
             <label for="product name">Nombre del producto</label>
-            <input type="text" name="product-name" id="product name" placeholder="Labial líquido" required>
+            <input type="text" name="name" id="product name" placeholder="Labial líquido" value="<%= product.name %> " required>
         </div>
         <div class="form-unitary">
             <label for="brand name">Marca</label>
-            <input type="text" name="product-brand" id="brand name" placeholder="Maybelline" required>
+            <input type="text" name="brand" id="brand name" placeholder="Maybelline" required>
         </div>
         <div class="form-unitary">
             <label class="description" for="description">Descripción</label>
-            <textarea name="product-description" id="description" cols="30" rows="5" placeholder="lorem ipsum dolor sit amet." required></textarea>
+            <textarea name="description" id="description" cols="30" rows="5" placeholder="lorem ipsum dolor sit amet." required></textarea>
         </div>
         <div class="form-unitary">
             <label for="img">Imágen</label>
-            <input type="file" name="product-img" id="img" required>
+            <input type="file" name="image" id="img" required accept="image/*">
         </div>
         <div class="form-unitary">
             <label>Categoría del producto</label>
-            <select name="product-category" required>
+            <select name="category" required>
                 <option selected value="0">Elige una opción</option>
                 <optgroup label="Salud">
                     <option value="1">Higiene personal</option>
@@ -50,15 +50,15 @@
         </div>
         <div class="form-unitary">
             <label for="colors">Colores</label>
-            <input type="text" name="product-color" id="colors" placeholder="rojo">
+            <input type="text" name="color" id="colors" placeholder="rojo">
         </div>
         <div class="form-unitary">
             <label for="stock">Stock</label>
-            <input type="text" name="Product-stock" id="stock" placeholder="25" required>
+            <input type="text" name="stock" id="stock" required>
         </div>
         <div class="form-unitary">
             <label for="product price">Precio unitario</label>
-            <input type="text" name="product-price" id="product price" placeholder="$xxxx,xx" required>
+            <input type="text" name="price" id="product price" placeholder="$xxxx,xx" required>
         </div>
         <div class="buttons">
             <a href="/crud"><button class="edit" type="submit">Editar</button></a>
