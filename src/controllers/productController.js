@@ -40,7 +40,7 @@ let controller = {
                 product.name = req.body.name;
                 product.brand = req.body.brand;
                 product.description = req.body.description;
-                product.image = req.file.filename || 'default-image-product.jpg';
+                product.image = (req.file && req.file.filename) ? req.file.filename : 'default-image-product.jpg';
                 product.category = req.body.category;
                 product.stock = req.body.stock;
                 product.price = req.body.price;
@@ -60,7 +60,7 @@ let controller = {
         let product = {
             id: nuevoId(),
             ...req.body,
-             image: req.file.filename || 'default-image-product.jpg',
+             image: (req.file && req.file.filename) ? req.file.filename : 'default-image-product.jpg',
         }
         products.push(product);
 

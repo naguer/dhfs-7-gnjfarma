@@ -1,13 +1,13 @@
 [
     {
         "id": 1,
-        "name": "Labial líquido ",
-        "brand": "Maybelline ",
+        "name": "Labial líquido",
+        "brand": "Maybelline",
         "description": "Lorem ipsum dolor sit amet.",
         "image": "belleza-labial.png",
         "category": "Belleza",
-        "stock": "25 ",
-        "price": "1200 "
+        "stock": "25",
+        "price": "1200"
     },
     {
         "id": 2,
@@ -48,5 +48,5 @@
         "category": "Salud",
         "stock": "25 ",
         "price": "450 "
-    }  
+    }
 ]
