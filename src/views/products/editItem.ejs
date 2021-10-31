@@ -8,57 +8,57 @@
     <link rel="stylesheet" href="/css/editItem.css">
 </head>
 <body>
-    <form action="/products/editItem/<%= product.id %>?_method=PUT" class="form-container" method="POST">
+    <form action="/products/editItem/<%= product.id %>?_method=PUT" class="form-container" method="POST" enctype="multipart/form-data">
         <div class="title">
             <h1>Editar producto</h1>
         </div>
         <div class="form-unitary">
             <label for="product name">Nombre del producto</label>
-            <input type="text" name="name" id="product name" placeholder="Labial líquido" value="<%= product.name %> " required>
+            <input type="text" name="name" id="product name" value="<%= product.name %> " required>
         </div>
         <div class="form-unitary">
             <label for="brand name">Marca</label>
-            <input type="text" name="brand" id="brand name" placeholder="Maybelline" required>
+            <input type="text" name="brand" id="brand name" value="<%= product.brand %> " required>
         </div>
         <div class="form-unitary">
             <label class="description" for="description">Descripción</label>
-            <textarea name="description" id="description" cols="30" rows="5" placeholder="lorem ipsum dolor sit amet." required></textarea>
+            <textarea name="description" id="description" cols="30" rows="5" required><%= product.description%></textarea>
         </div>
         <div class="form-unitary">
             <label for="img">Imágen</label>
-            <input type="file" name="image" id="img" required accept="image/*">
+            <input type="file" name="image" id="img" required value="<%= product.image %> " accept="image/*">
         </div>
         <div class="form-unitary">
             <label>Categoría del producto</label>
             <select name="category" required>
-                <option selected value="0">Elige una opción</option>
+                <option selected >Elige una opción</option>
                 <optgroup label="Salud">
-                    <option value="1">Higiene personal</option>
-                    <option value="2">Higiene oral</option>
-                    <option value="3">Cuidado del bebé</option>
+                    <option value="Higiene personal">Higiene personal</option>
+                    <option value="Higiene oral">Higiene oral</option>
+                    <option value="Cudiado del bebé">Cuidado del bebé</option>
                 </optgroup>
                 <optgroup label="Belleza">
-                    <option value="4">Labios</option>
-                    <option value="5">Ojos</option>
-                    <option value="6">Rostro</option>
+                    <option value="Labios">Labios</option>
+                    <option value="Ojos">Ojos</option>
+                    <option value="Rostro">Rostro</option>
                 </optgroup>
                 <optgroup label="Limpieza">
-                    <option value="7">Limpieza hogar</option>
-                    <option value="8">Limpieza ropa</option>
+                    <option value="Limpieza hogar">Limpieza hogar</option>
+                    <option value="Limpieza ropa">Limpieza ropa</option>
                 </optgroup>
             </select>
         </div>
         <div class="form-unitary">
             <label for="colors">Colores</label>
-            <input type="text" name="color" id="colors" placeholder="rojo">
+            <input type="color" name="color" id="colors" placeholder="rojo">
         </div>
         <div class="form-unitary">
             <label for="stock">Stock</label>
-            <input type="text" name="stock" id="stock" required>
+            <input type="text" name="stock" id="stock" value="<%= product.stock %> " required>
         </div>
         <div class="form-unitary">
             <label for="product price">Precio unitario</label>
-            <input type="text" name="price" id="product price" placeholder="$xxxx,xx" required>
+            <input type="text" name="price" id="product price" value="<%= product.price %> " required>
         </div>
         <div class="buttons">
             <a href="/crud"><button class="edit" type="submit">Editar</button></a>

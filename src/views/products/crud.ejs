@@ -1,21 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>CRUD</title>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    rel="stylesheet" />
-    <link rel="stylesheet" href="/css/crud.css">
-  
-    </head>
+    <%- include('../partials/head', {'title': 'CRUD'}) %>
     <body>
-       
+        <%- include('../partials/header') %>
         <div class="first-lane">
             <h1>Listado de productos</h1>
-        </div>
-        <div class="second-lane">
+            
             <form class="search-product" action="" method="GET">
                 <div class="search-product-bar">
                     <label></label>
@@ -28,15 +18,12 @@
             </div>
         </div>
         <div class="table-conteiner">
-            <table class="table">
-                <thead>
-                    <tr>
+            <table class="table-crud">
+                <thead class="thead-crud">
+                    <tr class="tr-crud">
                         <th>Nombre del producto</th>
                         <th>Marca</th>
-                        <th>Descripción</th>
-                        <th>Imagen</th>
                         <th>Categoría</th>
-                        <th>Colores</th>
                         <th>Stock</th>
                         <th>Precio</th>
                         <th>Acciones</th>
@@ -47,5 +34,6 @@
                 <%   })%>
             </table>
         </div>
+        <%- include('../partials/footer') %>
     </body>
 </html>

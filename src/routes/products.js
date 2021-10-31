@@ -25,9 +25,9 @@ router.get('/crud', controller.crud);
 router.get('/editItem/:id', controller.editItem);
 
 router.get('/addItem', controller.addItem);
-router.post('/addItem', upload.single('name'), controller.store);
+router.post('/addItem', upload.single('image'), controller.store);
 
-router.put('/editItem/:id', controller.update);
+router.put('/editItem/:id',upload.single('image'), controller.update);
 
 
 

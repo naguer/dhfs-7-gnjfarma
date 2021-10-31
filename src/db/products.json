@@ -1,57 +1,57 @@
 [
     {
         "id": 1,
-        "name": "Labial líquido",
-        "brand": "Maybelline",
+        "name": "Labial líquido ",
+        "brand": "Maybelline ",
         "description": "Lorem ipsum dolor sit amet.",
-        "image": "/images/products/belleza-labial.png",
+        "image": "belleza-labial.png",
         "category": "Belleza",
-        "colors": "red",
-        "stock": 25,
-        "price": 1200
+        "stock": "25 ",
+        "price": "1200 ",
+        "color": ""
     },
     {
         "id": 2,
-        "name": "Shampoo manzanilla",
-        "brand": "Johnsons baby",
+        "name": "Shampoo manzanilla ",
+        "brand": "Johnsons baby ",
         "description": "Lorem ipsum dolor sit amet.",
-        "image": "/images/products/shampoo-manzanilla.jpg",
-        "category": "Salud",
-        "colors": "",
-        "stock": 25,
-        "price": 500
+        "image": "shampoo-manzanilla.jpg",
+        "category": "Limpieza",
+        "stock": "25 ",
+        "price": "500 ",
+        "color": ""
     },
     {
         "id": 3,
-        "name": "Satial food",
-        "brand": "Satial",
+        "name": "Satial food ",
+        "brand": "Satial ",
         "description": "Lorem ipsum dolor sit amet.",
-        "image": "/images/products/satial-food.jpg",
-        "category": "Salud",
-        "colors": "",
-        "stock": 25,
-        "price": 900
+        "image": "satial-food.jpg",
+        "category": "Limpieza",
+        "stock": "25 ",
+        "price": "900 ",
+        "color": ""
     },
     {
         "id": 4,
-        "name": "Limpiador gel con lavandina",
-        "brand": "Lysoform",
+        "name": "Limpiador gel con lavandina ",
+        "brand": "Lysoform ",
         "description": "Lorem ipsum dolor sit amet.",
-        "image": "/images/products/lavandina-en-gel.jpg",
+        "image": "lavandina-en-gel.jpg",
         "category": "Limpieza",
-        "colors": "",
-        "stock": 25,
-        "price": 300
+        "stock": "25 ",
+        "price": "300 ",
+        "color": ""
     },
     {
         "id": 5,
-        "name": "Enjuague bucal",
-        "brand": "Listerine",
+        "name": "Enjuague bucal ",
+        "brand": "Listerine ",
         "description": "Lorem ipsum dolor sit amet.",
-        "image": "/images/products/enjuague-bucal.jpg",
+        "image": "enjuague-bucal.jpg",
         "category": "Salud",
-        "colors": "",
-        "stock": 25,
-        "price": 450
+        "stock": "25 ",
+        "price": "450 ",
+        "color": ""
     }
 ]
