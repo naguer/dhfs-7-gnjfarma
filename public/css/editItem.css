@@ -1,24 +1,16 @@
-*{
-    font-family: "Glory";
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box; 
-}
 
 .title {
     margin: 20px 40px;
 }
 
 .form-container {
-    display: flex;
-    flex-direction: column;
     background-color: rgb(197, 213, 255);
     width: 40%;
     margin: auto;
     margin-top: 50px;
     padding: 10px 0;
     border-radius: 15px;
-    
+    margin-bottom: 30px;
 }
 
 .form-unitary {   
@@ -33,29 +25,31 @@
     border: none;
     height: 2.8vh;
     outline: none;
-    width: 40%;
+    width: 90%;
 }
 
 .description {
     vertical-align: top;
+    width: 90%;
 }
 textarea {
     border-radius: 5px;
     outline: none;
     border: none;
-    width: 40%;
+    width: 90%;
 }
 
 select{
     height: 2.8vh;
     outline: none;
-    width: 40%;
+    width: 90%;
 }
 
-.buttons {
-    width: 50%;
+.buttons-editItem {
+    width: 100%;
     display: flex;
     justify-content: space-around;
+    
 }
 
 .edit{

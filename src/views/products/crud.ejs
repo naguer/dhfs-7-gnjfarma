@@ -1,39 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('../partials/head', {'title': 'CRUD'}) %>
+<%- include('../partials/head', {'title': 'CRUD' }) %>
+
     <body>
         <%- include('../partials/header') %>
-        <div class="first-lane">
-            <h1>Listado de productos</h1>
-            
-            <form class="search-product" action="" method="GET">
-                <div class="search-product-bar">
-                    <label></label>
-                    <input type="text" name="search" placeholder="Buscar productos">
+            <div class="wrapper-container">
+                <div class="first-lane">
+                    <h1>Listado de productos</h1>
+
+                    <form class="search-product" action="" method="GET">
+                        <div class="search-product-bar">
+                            <label></label>
+                            <input type="text" name="search" placeholder="Buscar productos">
+                        </div>
+                        <i class="fas fa-search"></i>
+                    </form>
+                    <div class="add-product">
+                        <a href="/products/addItem">Añadir producto</a>
+                    </div>
                 </div>
-                <i class="fas fa-search"></i>
-            </form>
-            <div class="add-product">
-                <a href="/products/addItem">Añadir producto</a>
+                <div class="table-conteiner">
+                    <table class="table-crud">
+                        <thead class="thead-crud">
+                            <tr class="tr-crud">
+                                <th>Nombre del producto</th>
+                                <th>Marca</th>
+                                <th>Categoría</th>
+                                <th>Stock</th>
+                                <th>Precio</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <%products.forEach(product=>{%>
+                            <%- include('../partials/crudProduct',{product}) %>
+                        <% })%>
+                    </table>
+
+                </div>
             </div>
-        </div>
-        <div class="table-conteiner">
-            <table class="table-crud">
-                <thead class="thead-crud">
-                    <tr class="tr-crud">
-                        <th>Nombre del producto</th>
-                        <th>Marca</th>
-                        <th>Categoría</th>
-                        <th>Stock</th>
-                        <th>Precio</th>
-                        <th>Acciones</th>
-                    </tr>
-                </thead>
-                <%products.forEach(product=>{%>
-                    <%- include('../partials/crudProduct',{product}) %>
-                <%   })%>
-            </table>
-        </div>
-        <%- include('../partials/footer') %>
+            <%- include('../partials/footer') %>
+
     </body>
+
 </html>

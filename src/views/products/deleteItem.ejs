@@ -9,7 +9,7 @@
 </head>
 <body>
     <%- include('../partials/header') %>
-    <form action="/products/editItem/<%= product.id %>?_method=PUT" class="form-container" method="POST" enctype="multipart/form-data">
+    <form action="/products/deleteItem/<%= product.id %>?_method=DELETE" class="form-container" method="POST" enctype="multipart/form-data">
         <div class="title">
             <h1>Editar producto</h1>
         </div>
@@ -24,10 +24,6 @@
                     <input type="text" name="brand" id="brand name" value="<%= product.brand %> " required>
                 </div>
                 <div class="form-unitary">
-                    <label for="img">Imágen</label>
-                    <input type="file" name="image" id="img" required value="<%= product.image %> " accept="image/*">
-                </div>
-                <div class="form-unitary">
                     <label class="description" for="description">Descripción</label>
                     <textarea name="description" id="description" cols="30" rows="5" required><%= product.description%></textarea>
                 </div>
@@ -35,12 +31,7 @@
             <div class="second-block">
                 <div class="form-unitary">
                     <label>Categoría del producto</label>
-                    <select name="category" required>
-                        <option selected >Elige una opción</option>
-                            <option value="Salud">Salud</option>
-                            <option value="Belleza">Belleza</option>
-                            <option value="Limpieza">Limpieza</option>
-                    </select>
+                    <input type="categoría" value="<%= product.category %> ">
                 </div>
                 <div class="form-unitary">
                     <label for="stock">Stock</label>
@@ -53,7 +44,7 @@
             </div>
         </div>
         <div class="buttons-editItem">
-            <a href="/crud"><button class="edit" type="submit">Editar</button></a>
+            <a href="/crud"><button class="edit" type="submit">Grabar</button></a>
             <button class="delete" type="submit">Cancelar</button>
         </div>
     </form>

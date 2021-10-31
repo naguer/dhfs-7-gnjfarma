@@ -5,65 +5,58 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Añadir producto</title>
-        <link rel="stylesheet" href="/css/addItem.css">
+        <link rel="stylesheet" href="/css/style.css">
     </head>
     <body>
+        <%- include('../partials/header') %>
         <form action="" class="form-container" method="POST" enctype="multipart/form-data">
             <div class="title">
                 <h1>Añadir producto</h1>
             </div>
-            <div class="form-unitary">
-                <label for="product name">Nombre del producto</label>
-                <input type="text" name="name" id="product name" required>
+            <div class="form-block">
+                <div class="first-block">
+                    <div class="form-unitary">
+                        <label for="product name">Nombre del producto</label>
+                        <input type="text" name="name" id="product name" required>
+                    </div>
+                    <div class="form-unitary">
+                        <label for="brand name">Marca</label>
+                        <input type="text" name="brand" id="brand name" required>
+                    </div>
+                    <div class="form-unitary">
+                        <label for="img">Imágen</label>
+                        <input type="file" name="image" id="img" accept="image/*">
+                    </div>
+                    <div class="form-unitary">
+                        <label class="description" for="description">Descripción</label>
+                        <textarea name="description" id="description" cols="30" rows="5" required></textarea>
+                    </div>
+                </div>
+                <div class="second-block">
+                    <div class="form-unitary">
+                        <label>Categoría del producto</label>
+                        <select name="category" required>
+                            <option selected value="0">Elige una opción</option>
+                                <option value="Salud">Salud</option>
+                                <option value="Belleza">Belleza</option>
+                                <option value="Limpieza">Limpieza</option>
+                        </select>
+                    </div>
+                    <div class="form-unitary">
+                        <label for="stock">Stock</label>
+                        <input type="text" name="stock" id="stock" required>
+                    </div>
+                    <div class="form-unitary">
+                        <label for="product price">Precio unitario</label>
+                        <input type="text" name="price" id="product price" required>
+                    </div>
+                </div>
             </div>
-            <div class="form-unitary">
-                <label for="brand name">Marca</label>
-                <input type="text" name="brand" id="brand name" required>
-            </div>
-            <div class="form-unitary">
-                <label class="description" for="description">Descripción</label>
-                <textarea name="description" id="description" cols="30" rows="5" required></textarea>
-            </div>
-            <div class="form-unitary">
-                <label for="img">Imágen</label>
-                <input type="file" name="image" id="img" accept="image/*">
-            </div>
-            <div class="form-unitary">
-                <label>Categoría del producto</label>
-                <select name="category" required>
-                    <option selected value="0">Elige una opción</option>
-                    <optgroup label="Salud">
-                        <option value="Salud">Higiene personal</option>
-                        <option value="Salud">Higiene oral</option>
-                        <option value="Salud">Cuidado del bebé</option>
-                    </optgroup>
-                    <optgroup label="Belleza">
-                        <option value="Belleza">Labios</option>
-                        <option value="Belleza">Ojos</option>
-                        <option value="Belleza">Rostro</option>
-                    </optgroup>
-                    <optgroup label="Limpieza">
-                        <option value="Limpieza">Limpieza hogar</option>
-                        <option value="Limpieza">Limpieza ropa</option>
-                    </optgroup>
-                </select>
-            </div>
-            <div class="form-unitary">
-                <label for="colors">Colores</label>
-                <input type="color" name="color" id="colors">
-            </div>
-            <div class="form-unitary">
-                <label for="stock">Stock</label>
-                <input type="text" name="stock" id="stock" required>
-            </div>
-            <div class="form-unitary">
-                <label for="product price">Precio unitario</label>
-                <input type="text" name="price" id="product price" required>
-            </div>
-            <div class="buttons">
+            <div class="buttons-addItem">
                 <a href="/crud"><button class="add" type="submit">Añadir</button></a>
                 <button class="delete" type="submit">Borrar</button>
             </div>
         </form>
+        <%- include('../partials/footer') %>
     </body>
 </html>

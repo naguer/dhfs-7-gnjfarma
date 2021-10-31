@@ -42,7 +42,6 @@ let controller = {
                 product.description = req.body.description;
                 product.image = req.file.filename || 'default-image-product.jpg';
                 product.category = req.body.category;
-                product.color = req.body.color;
                 product.stock = req.body.stock;
                 product.price = req.body.price;
             }
@@ -68,6 +67,22 @@ let controller = {
         let jsonDeProductos = JSON.stringify(products, null, 4);
         fs.writeFileSync(path.resolve(__dirname, '../db/products.json'), jsonDeProductos);
 
+        res.redirect('/products/crud')
+    },
+    deleteItem:(req,res)=>{
+        let productDelete = products.find(product => {
+            return product.id == req.params.id;
+        })
+        res.render('products/deleteItem', {product: productDelete})
+    },
+    delete: (req,res)=>{
+        let restProducts= products.filter(product=>{
+            return product.id!=req.params.id;
+        });
+
+        let jsonDeProductos = JSON.stringify(restProducts, null, 4);
+        fs.writeFileSync(path.resolve(__dirname, '../db/products.json'), jsonDeProductos);
+        
         res.redirect('/products/crud')
     }
 }
