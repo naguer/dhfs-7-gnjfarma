@@ -14,9 +14,11 @@ module.exports = {
         products.forEach(product => {
             if(product.category=="Belleza"){
                 productsBeauty.push(product)
-            }else if(product.category=='Salud'){
+            }
+            if(product.category=='Salud'){
                 productsHealthy.push(product)
-            }else{
+            }if(product.category=='Limpieza' && productsCleaning.length<4)
+            {
                 productsCleaning.push(product)
             }
             

@@ -19,6 +19,7 @@
 
 .add-product {
     width: 20%;
+    align-self: center;
 }
 .add-product a {
     background-color: rgb(12, 158, 12);
@@ -37,7 +38,7 @@
     width: 15%;
     background-color: rgb(197, 213, 255);
     position: relative;
-    margin-bottom: 10px;
+    align-self: center;
 }
 .search-product-bar {
     color:#2e2e2e;
